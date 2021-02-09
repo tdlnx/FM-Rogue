@@ -3678,7 +3678,11 @@
 <li><a href="#44LayoutObjectsAnchor_Buttons">3 Buttons</a></li>
 <li><a href="#44LayoutObjectsAnchor_Portals">1 Portals</a></li>
 </ul>
-</td><td><a href="#1065099TableAnchor_"><em>Hero</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td></td><td>[File Default]</td><td></td><td><a href="#01valThemesSectionAnchor_">01</a></td>
+</td><td><a href="#1065099TableAnchor_"><em>Hero</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td>
+<ul>
+<li><a href="#1ScriptAnchor_">startup</a></li>
+</ul>
+</td><td>[File Default]</td><td></td><td><a href="#01valThemesSectionAnchor_">01</a></td>
 </tr>
 <tr class="regularcharttext" valign="top">
 <td><a name="47LayoutAnchor_"/>Loading</td><td>No</td><td>Yes</td><td>
@@ -3703,7 +3707,6 @@
 </ul>
 </td><td><a href="#1065099TableAnchor_"><em>Hero</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td>
 <ul>
-<li><a href="#1ScriptAnchor_">startup</a></li>
 <li><a href="#42ScriptAnchor_">newMap</a></li>
 <li><a href="#43ScriptAnchor_">spawnHero</a></li>
 </ul>
@@ -6067,17 +6070,15 @@
 <li>Set Variable [ $$player; Value:Get ( AccountName ) ]</li>
 <li></li>
 <li>#Look for previous heros</li>
-<li>New Window [ Style: Card; Name: "Tavern"; Using layout: &ldquo;Hero&rdquo; (Hero); Close: No; Minimize: No; Maximize: No; Resize: No; Menu Bar: No; Dim parent window: Yes; Toolbars: No ]</li>
-<li>Adjust Window
-[ Resize to Fit ]</li>
+<li>New Window [ Style: Card; Name: "Tavern"; Using layout: &ldquo;Tavern&rdquo; (Hero); Close: No; Minimize: No; Maximize: No; Resize: No; Menu Bar: No; Dim parent window: Yes; Toolbars: No ]</li>
 <li>Perform Find [ Specified Find Requests: Find Records; Criteria: Hero::createdBy: &ldquo;$$player
 &rdquo; AND Hero::status: &ldquo;"alive"&rdquo; ]
 [ Restore ]</li>
 <li>If [ Get ( LastError ) = 401 ]</li>
 <li>Go to Layout [ &ldquo;New Adventure&rdquo; (Map) ]</li>
+<li>End If</li>
 <li>Adjust Window
 [ Resize to Fit ]</li>
-<li>End If</li>
 <li></li>
 </ul>
 </td>
@@ -6098,7 +6099,7 @@
 <tr vAlign="top">
 <td class="chartheadersnobg">Layouts used in this script</td><td class="regularcharttext">
 <ul>
-<li><a href="#36LayoutAnchor_">Hero</a></li>
+<li><a href="#44LayoutAnchor_">Tavern</a></li>
 <li><a href="#43LayoutAnchor_">New Adventure</a></li>
 </ul>
 </td>

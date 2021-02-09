@@ -1,0 +1,64 @@
+﻿Timestamp	Filename	Error	Message
+2021-02-08 11:07:44.437 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 11:07:44.441 -0500	dev.createBackup	0	script steps imported : 16
+2021-02-08 11:07:44.441 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 11:45:06.596 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 11:45:06.597 -0500	moveHero	0	script steps imported : 2
+2021-02-08 11:45:06.597 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 11:45:56.094 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 11:45:56.095 -0500	moveHero	0	script steps imported : 2
+2021-02-08 11:45:56.095 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 11:46:24.214 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 11:46:24.215 -0500	moveHero	0	script steps imported : 2
+2021-02-08 11:46:24.215 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 12:13:51.709 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 12:13:51.710 -0500	door.bash	0	script steps imported : 1
+2021-02-08 12:13:51.710 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 12:15:27.751 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 12:15:27.752 -0500	door.bash	0	script steps imported : 1
+2021-02-08 12:15:27.752 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 12:17:23.858 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 12:17:23.860 -0500	door.bash	0	script steps imported : 10
+2021-02-08 12:17:23.860 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 12:48:59.012 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 12:48:59.013 -0500	door.openClose	0	script steps imported : 1
+2021-02-08 12:48:59.013 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 12:49:29.579 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 12:49:29.580 -0500	door.openClose	0	script steps imported : 1
+2021-02-08 12:49:29.580 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 12:51:37.101 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 12:51:37.102 -0500	performAction	0	script steps imported : 1
+2021-02-08 12:51:37.103 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 12:54:04.224 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 12:54:04.225 -0500	door.isLocked	0	script steps imported : 3
+2021-02-08 12:54:04.225 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 12:54:33.591 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 12:54:33.592 -0500	door.isLocked	0	script steps imported : 1
+2021-02-08 12:54:33.592 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 13:11:30.725 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 13:11:30.727 -0500	performAction	0	script steps imported : 1
+2021-02-08 13:11:30.727 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 14:29:02.737 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 14:29:02.738 -0500	moveHero	0	script steps imported : 1
+2021-02-08 14:29:02.738 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 17:28:46.140 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 17:28:46.143 -0500	spawnHero	0	script steps imported : 10
+2021-02-08 17:28:46.143 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 17:55:31.513 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 17:55:31.515 -0500	shutdown	0	script steps imported : 8
+2021-02-08 17:55:31.515 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 17:57:00.828 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 17:57:00.828 -0500	shutdown	0	script steps imported : 1
+2021-02-08 17:57:00.829 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 17:57:08.005 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 17:57:08.006 -0500	shutdown	0	script steps imported : 1
+2021-02-08 17:57:08.006 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 18:00:44.160 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 18:00:44.161 -0500	startup	0	script steps imported : 1
+2021-02-08 18:00:44.161 -0500	FMRogue.fmp12	0	Import completed
+2021-02-08 18:14:38.213 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-08 18:14:38.214 -0500	load	0	script steps imported : 1
+2021-02-08 18:14:38.214 -0500	FMRogue.fmp12	0	Import completed
+2021-02-09 14:04:10.176 -0500	FMRogue.fmp12	0	Import of script steps from clipboard started
+2021-02-09 14:04:10.177 -0500	startup	0	script steps imported : 1
+2021-02-09 14:04:10.177 -0500	FMRogue.fmp12	0	Import completed
