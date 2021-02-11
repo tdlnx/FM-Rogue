@@ -1,0 +1,5 @@
+﻿Timestamp	Filename	Error	Message
+2021-02-11 10:55:14.745 -0500	FMRogue.fmp12	0	*** Started consistency check of improperly closed file, total of 267 block(s) to check
+2021-02-11 10:55:14.746 -0500	FMRogue.fmp12	8432	Page 267 marked free but not in free list
+2021-02-11 10:55:14.747 -0500	FMRogue.fmp12	0	Reset maximum block sequence number to 16765
+2021-02-11 10:55:14.747 -0500	FMRogue.fmp12	0	*** Completed consistency check, checked 267 block(s)
