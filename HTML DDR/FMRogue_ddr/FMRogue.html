@@ -25,7 +25,7 @@
 <td class="chartheadersnobg">Layouts</td><td class="regularcharttext"><a href="#valLayoutsSectionAnchor_">14</a></td>
 </tr>
 <tr>
-<td class="chartheadersnobg">Scripts</td><td class="regularcharttext"><a href="#valScriptsSectionAnchor_">20</a></td>
+<td class="chartheadersnobg">Scripts</td><td class="regularcharttext"><a href="#valScriptsSectionAnchor_">21</a></td>
 </tr>
 <tr>
 <td class="chartheadersnobg">Value Lists</td><td class="regularcharttext">0</td>
@@ -131,22 +131,22 @@
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#136BaseTableAnchor_">Map</a></td><td>
-<div align="left"><a href="#136BaseTableAnchor_">8 fields</a> defined, 0 record</div>
+<div align="left"><a href="#136BaseTableAnchor_">8 fields</a> defined, 20 records</div>
 </td><td><a href="#1065096TableAnchor_"><em>Map</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#137BaseTableAnchor_">MapTile</a></td><td>
-<div align="left"><a href="#137BaseTableAnchor_">7 fields</a> defined, 0 record</div>
+<div align="left"><a href="#137BaseTableAnchor_">7 fields</a> defined, 30 records</div>
 </td><td><a href="#1065097TableAnchor_"><em>MapTile</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#138BaseTableAnchor_">Locations</a></td><td>
-<div align="left"><a href="#138BaseTableAnchor_">11 fields</a> defined, 0 record</div>
+<div align="left"><a href="#138BaseTableAnchor_">13 fields</a> defined, 33 records</div>
 </td><td><a href="#1065098TableAnchor_"><em>Locations</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#139BaseTableAnchor_">Hero</a></td><td>
-<div align="left"><a href="#139BaseTableAnchor_">11 fields</a> defined, 0 record</div>
+<div align="left"><a href="#139BaseTableAnchor_">11 fields</a> defined, 4 records</div>
 </td><td><a href="#1065099TableAnchor_"><em>Hero</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
@@ -156,7 +156,7 @@
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#141BaseTableAnchor_">Equipment</a></td><td>
-<div align="left"><a href="#141BaseTableAnchor_">9 fields</a> defined, 0 record</div>
+<div align="left"><a href="#141BaseTableAnchor_">10 fields</a> defined, 0 record</div>
 </td><td><a href="#1065101TableAnchor_"><em>Equipment</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
@@ -171,12 +171,12 @@
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#145BaseTableAnchor_">Graveyard</a></td><td>
-<div align="left"><a href="#145BaseTableAnchor_">8 fields</a> defined, 0 record</div>
+<div align="left"><a href="#145BaseTableAnchor_">8 fields</a> defined, 14 records</div>
 </td><td><a href="#1065105TableAnchor_"><em>Graveyard</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a href="#146BaseTableAnchor_">Saved</a></td><td>
-<div align="left"><a href="#146BaseTableAnchor_">12 fields</a> defined, 0 record</div>
+<div align="left"><a href="#146BaseTableAnchor_">12 fields</a> defined, 1 record</div>
 </td><td><a href="#1065106TableAnchor_"><em>Saved</em></a></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
@@ -430,8 +430,11 @@
 <li><a href="#77ScriptAnchor_">load</a></li>
 <li><a href="#73ScriptAnchor_">shutdown</a></li>
 <li><a href="#42ScriptAnchor_">newMap</a></li>
+<li><a href="#78ScriptAnchor_">dynamicMapping</a></li>
 <li><a href="#50ScriptAnchor_">performAction</a></li>
+<li><a href="#72ScriptAnchor_">rat</a></li>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
+<li><a href="#64ScriptAnchor_">door.isLocked</a></li>
 <li><a href="#65ScriptAnchor_">door.openClose</a></li>
 </ul>
 </td><td>
@@ -623,10 +626,14 @@
 <li><a href="#77ScriptAnchor_">load</a></li>
 <li><a href="#73ScriptAnchor_">shutdown</a></li>
 <li><a href="#42ScriptAnchor_">newMap</a></li>
+<li><a href="#78ScriptAnchor_">dynamicMapping</a></li>
 <li><a href="#44ScriptAnchor_">enterMap</a></li>
 <li><a href="#45ScriptAnchor_">moveHero</a></li>
 <li><a href="#43ScriptAnchor_">spawnHero</a></li>
+<li><a href="#72ScriptAnchor_">rat</a></li>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
+<li><a href="#64ScriptAnchor_">door.isLocked</a></li>
+<li><a href="#65ScriptAnchor_">door.openClose</a></li>
 </ul>
 </td><td>
 <ul></ul>
@@ -670,7 +677,7 @@
 		<table width="100%" border="1">
 <tbody>
 <tr class="privsetfirst" vAlign="top">
-<td colSpan="9">Table Name: <a name="138BaseTableAnchor_"/>Locations - 11 Fields</td>
+<td colSpan="9">Table Name: <a name="138BaseTableAnchor_"/>Locations - 13 Fields</td>
 </tr>
 <tr class="chartheaders" vAlign="top">
 <td width="8%">Field Name</td><td width="7%">Type</td><td width="14%">Options</td><td width="10%">Comments</td><td width="13%">On Layouts</td><td width="15%">In Relationships</td><td width="22%">In Scripts</td><td width="11%">In Value Lists</td>
@@ -830,8 +837,7 @@
 <strong>Storage:</strong>
 <ul>
 <li>Repetitions: 1</li>
-<li>Indexing: Minimal</li>
-<li>Automatically create indexes as needed</li>
+<li>Indexing: All</li>
 <li>Index Language: English</li>
 </ul>
 </td><td></td><td>
@@ -842,6 +848,7 @@
 <ul></ul>
 </td><td>
 <ul>
+<li><a href="#72ScriptAnchor_">rat</a></li>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
 <li><a href="#64ScriptAnchor_">door.isLocked</a></li>
 </ul>
@@ -872,6 +879,7 @@
 <ul></ul>
 </td><td>
 <ul>
+<li><a href="#72ScriptAnchor_">rat</a></li>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
 <li><a href="#64ScriptAnchor_">door.isLocked</a></li>
 </ul>
@@ -902,7 +910,9 @@
 </td><td>
 <ul></ul>
 </td><td>
-<ul></ul>
+<ul>
+<li><a href="#72ScriptAnchor_">rat</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td>
@@ -930,7 +940,9 @@
 </td><td>
 <ul></ul>
 </td><td>
-<ul></ul>
+<ul>
+<li><a href="#72ScriptAnchor_">rat</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td>
@@ -959,6 +971,7 @@
 <ul></ul>
 </td><td>
 <ul>
+<li><a href="#72ScriptAnchor_">rat</a></li>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
 <li><a href="#64ScriptAnchor_">door.isLocked</a></li>
 </ul>
@@ -990,6 +1003,62 @@
 </ul>
 </td><td>
 <ul></ul>
+</td><td>
+<ul></ul>
+</td>
+</tr>
+			<tr class="regularcharttext" vAlign="top">
+<td><a name="13813FieldAnchor_"/>gp</td><td>Normal, Text</td><td><strong>Auto-Enter:</strong>
+<ul>
+<li>Allow editing</li>
+</ul>
+<strong>Validation:</strong>
+<ul>
+<li>Only during data entry</li>
+</ul>
+<strong>Storage:</strong>
+<ul>
+<li>Repetitions: 1</li>
+<li>Indexing: None</li>
+<li>Automatically create indexes as needed</li>
+<li>Index Language: English</li>
+</ul>
+</td><td></td><td>
+<ul></ul>
+</td><td>
+<ul></ul>
+</td><td>
+<ul>
+<li><a href="#72ScriptAnchor_">rat</a></li>
+</ul>
+</td><td>
+<ul></ul>
+</td>
+</tr>
+			<tr class="regularcharttext" vAlign="top">
+<td><a name="13814FieldAnchor_"/>item</td><td>Normal, Text</td><td><strong>Auto-Enter:</strong>
+<ul>
+<li>Allow editing</li>
+</ul>
+<strong>Validation:</strong>
+<ul>
+<li>Only during data entry</li>
+</ul>
+<strong>Storage:</strong>
+<ul>
+<li>Repetitions: 1</li>
+<li>Indexing: None</li>
+<li>Automatically create indexes as needed</li>
+<li>Index Language: English</li>
+</ul>
+</td><td></td><td>
+<ul></ul>
+</td><td>
+<ul></ul>
+</td><td>
+<ul>
+<li><a href="#72ScriptAnchor_">rat</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td>
@@ -1033,6 +1102,7 @@
 </td><td>
 <ul>
 <li><a href="#77ScriptAnchor_">load</a></li>
+<li><a href="#73ScriptAnchor_">shutdown</a></li>
 <li><a href="#42ScriptAnchor_">newMap</a></li>
 <li><a href="#43ScriptAnchor_">spawnHero</a></li>
 </ul>
@@ -1180,7 +1250,10 @@
 </td><td>
 <ul></ul>
 </td><td>
-<ul></ul>
+<ul>
+<li><a href="#73ScriptAnchor_">shutdown</a></li>
+<li><a href="#43ScriptAnchor_">spawnHero</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td>
@@ -1211,6 +1284,8 @@
 <ul></ul>
 </td><td>
 <ul>
+<li><a href="#77ScriptAnchor_">load</a></li>
+<li><a href="#73ScriptAnchor_">shutdown</a></li>
 <li><a href="#42ScriptAnchor_">newMap</a></li>
 <li><a href="#43ScriptAnchor_">spawnHero</a></li>
 </ul>
@@ -1242,7 +1317,10 @@
 </td><td>
 <ul></ul>
 </td><td>
-<ul></ul>
+<ul>
+<li><a href="#73ScriptAnchor_">shutdown</a></li>
+<li><a href="#43ScriptAnchor_">spawnHero</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td>
@@ -1303,26 +1381,26 @@
 </td><td>
 <ul></ul>
 </td><td>
-<ul></ul>
+<ul>
+<li><a href="#77ScriptAnchor_">load</a></li>
+<li><a href="#73ScriptAnchor_">shutdown</a></li>
+<li><a href="#43ScriptAnchor_">spawnHero</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td>
 </tr>
 			<tr class="regularcharttext" vAlign="top">
-<td><a name="13913FieldAnchor_"/>status</td><td>Normal, Text</td><td><strong>Auto-Enter:</strong>
+<td><a name="13913FieldAnchor_"/>status</td><td>Calculated, Text</td><td><strong>Calculation:</strong>
 <ul>
-<li>Constant data: alive</li>
-<li>Allow editing</li>
-</ul>
-<strong>Validation:</strong>
-<ul>
-<li>Only during data entry</li>
+<li>Context table: <a href="#1065099TableAnchor_"><em>Hero</em></a></li>
+<li>
+<strong>If</strong> ( <a href="#1396FieldAnchor_"><em>Hero</em>::hp</a> &gt; 0; "alive"; "dead" )</li>
 </ul>
 <strong>Storage:</strong>
 <ul>
 <li>Repetitions: 1</li>
-<li>Indexing: Minimal</li>
-<li>Automatically create indexes as needed</li>
+<li>Do not store calculation results</li>
 <li>Index Language: English</li>
 </ul>
 </td><td></td><td>
@@ -1559,7 +1637,7 @@
 <strong>Storage:</strong>
 <ul>
 <li>Repetitions: 1</li>
-<li>Indexing: None</li>
+<li>Indexing: Minimal</li>
 <li>Automatically create indexes as needed</li>
 <li>Index Language: English</li>
 </ul>
@@ -1583,7 +1661,7 @@
 		<table width="100%" border="1">
 <tbody>
 <tr class="privsetfirst" vAlign="top">
-<td colSpan="9">Table Name: <a name="141BaseTableAnchor_"/>Equipment - 9 Fields</td>
+<td colSpan="9">Table Name: <a name="141BaseTableAnchor_"/>Equipment - 10 Fields</td>
 </tr>
 <tr class="chartheaders" vAlign="top">
 <td width="8%">Field Name</td><td width="7%">Type</td><td width="14%">Options</td><td width="10%">Comments</td><td width="13%">On Layouts</td><td width="15%">In Relationships</td><td width="22%">In Scripts</td><td width="11%">In Value Lists</td>
@@ -1827,7 +1905,7 @@
 <strong>Storage:</strong>
 <ul>
 <li>Repetitions: 1</li>
-<li>Indexing: None</li>
+<li>Indexing: Minimal</li>
 <li>Automatically create indexes as needed</li>
 <li>Index Language: English</li>
 </ul>
@@ -1837,6 +1915,32 @@
 <ul>
 <li><a href="#Equipment=HeroRelationshipAnchor_"><em>Equipment=Hero</em></a></li>
 </ul>
+</td><td>
+<ul></ul>
+</td><td>
+<ul></ul>
+</td>
+</tr>
+			<tr class="regularcharttext" vAlign="top">
+<td><a name="14110FieldAnchor_"/>category</td><td>Normal, Text</td><td><strong>Auto-Enter:</strong>
+<ul>
+<li>Allow editing</li>
+</ul>
+<strong>Validation:</strong>
+<ul>
+<li>Only during data entry</li>
+</ul>
+<strong>Storage:</strong>
+<ul>
+<li>Repetitions: 1</li>
+<li>Indexing: None</li>
+<li>Automatically create indexes as needed</li>
+<li>Index Language: English</li>
+</ul>
+</td><td></td><td>
+<ul></ul>
+</td><td>
+<ul></ul>
 </td><td>
 <ul></ul>
 </td><td>
@@ -3237,10 +3341,13 @@
 <li><a href="#77ScriptAnchor_">load</a></li>
 <li><a href="#73ScriptAnchor_">shutdown</a></li>
 <li><a href="#42ScriptAnchor_">newMap</a></li>
+<li><a href="#78ScriptAnchor_">dynamicMapping</a></li>
 <li><a href="#45ScriptAnchor_">moveHero</a></li>
 <li><a href="#43ScriptAnchor_">spawnHero</a></li>
 <li><a href="#50ScriptAnchor_">performAction</a></li>
+<li><a href="#72ScriptAnchor_">rat</a></li>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
+<li><a href="#64ScriptAnchor_">door.isLocked</a></li>
 <li><a href="#65ScriptAnchor_">door.openClose</a></li>
 </ul>
 </td><td>
@@ -3280,11 +3387,14 @@
 <ul>
 <li><a href="#77ScriptAnchor_">load</a></li>
 <li><a href="#1ScriptAnchor_">startup</a></li>
+<li><a href="#73ScriptAnchor_">shutdown</a></li>
 <li><a href="#42ScriptAnchor_">newMap</a></li>
 <li><a href="#43ScriptAnchor_">spawnHero</a></li>
 </ul>
 </td><td>
-<ul></ul>
+<ul>
+<li><a href="#13913FieldAnchor_"><em>Hero</em>::status</a></li>
+</ul>
 </td><td>
 <ul></ul>
 </td><td>
@@ -3318,6 +3428,7 @@
 </ul>
 </td><td>
 <ul>
+<li><a href="#72ScriptAnchor_">rat</a></li>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
 <li><a href="#64ScriptAnchor_">door.isLocked</a></li>
 </ul>
@@ -3341,10 +3452,14 @@
 <li><a href="#77ScriptAnchor_">load</a></li>
 <li><a href="#73ScriptAnchor_">shutdown</a></li>
 <li><a href="#42ScriptAnchor_">newMap</a></li>
+<li><a href="#78ScriptAnchor_">dynamicMapping</a></li>
 <li><a href="#44ScriptAnchor_">enterMap</a></li>
 <li><a href="#45ScriptAnchor_">moveHero</a></li>
 <li><a href="#43ScriptAnchor_">spawnHero</a></li>
+<li><a href="#72ScriptAnchor_">rat</a></li>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
+<li><a href="#64ScriptAnchor_">door.isLocked</a></li>
+<li><a href="#65ScriptAnchor_">door.openClose</a></li>
 </ul>
 </td><td>
 <ul></ul>
@@ -3517,7 +3632,7 @@
 <table class="script_hier">
 <tbody>
 <tr>
-<td class="script_hier"><a name="33LayoutAnchor_toc"></a><a href="#LayoutAnchor_">Dialogue</a></td>
+<td class="script_hier"><a name="33LayoutAnchor_toc"></a><a href="#42LayoutAnchor_">Dialogue</a></td>
 </tr>
 <tr>
 <td class="script_hier">
@@ -3527,7 +3642,20 @@
 <td class="script_hier_spacer"></td><td class="script_hier">
 <p></p>
 <table class="script_hier">
-<tbody></tbody>
+<tbody>
+<tr>
+<td class="script_hier"><a name="42LayoutAnchor_toc"></a><a href="#42LayoutAnchor_">Graveyard</a></td>
+</tr>
+<tr>
+<td class="script_hier"><a name="47LayoutAnchor_toc"></a><a href="#47LayoutAnchor_">Loading</a></td>
+</tr>
+<tr>
+<td class="script_hier"><a name="43LayoutAnchor_toc"></a><a href="#43LayoutAnchor_">New Adventure</a></td>
+</tr>
+<tr>
+<td class="script_hier"><a name="44LayoutAnchor_toc"></a><a href="#44LayoutAnchor_">Tavern</a></td>
+</tr>
+</tbody>
 </table>
 </td>
 </tr>
@@ -3536,22 +3664,7 @@
 </td>
 </tr>
 <tr>
-<td class="script_hier"><a name="42LayoutAnchor_toc"></a><a href="#42LayoutAnchor_">Graveyard</a></td>
-</tr>
-<tr>
 <td class="script_hier"><a name="16LayoutAnchor_toc"></a><a href="#16LayoutAnchor_">Map</a></td>
-</tr>
-<tr>
-<td class="script_hier"><a name="43LayoutAnchor_toc"></a><a href="#43LayoutAnchor_">New Adventure</a></td>
-</tr>
-<tr>
-<td class="script_hier"><a name="46LayoutAnchor_toc"></a><a href="#46LayoutAnchor_">Preferences</a></td>
-</tr>
-<tr>
-<td class="script_hier"><a name="44LayoutAnchor_toc"></a><a href="#44LayoutAnchor_">Tavern</a></td>
-</tr>
-<tr>
-<td class="script_hier"><a name="47LayoutAnchor_toc"></a><a href="#47LayoutAnchor_">Loading</a></td>
 </tr>
 </tbody>
 </table>
@@ -3595,6 +3708,9 @@
 <td class="script_hier"><a name="27LayoutAnchor_toc"></a><a href="#27LayoutAnchor_">MapTile</a></td>
 </tr>
 <tr>
+<td class="script_hier"><a name="46LayoutAnchor_toc"></a><a href="#46LayoutAnchor_">Preferences</a></td>
+</tr>
+<tr>
 <td class="script_hier"><a name="45LayoutAnchor_toc"></a><a href="#45LayoutAnchor_">Saved</a></td>
 </tr>
 </tbody>
@@ -3628,30 +3744,13 @@
 </td><td>[File Default]</td><td></td><td><a href="#02valThemesSectionAnchor_">02</a></td>
 </tr>
 <tr class="regularcharttext" valign="top">
-<td><a name="16LayoutAnchor_"/>Map</td><td>No</td><td>Yes</td><td>
-<ul>
-<li><a href="#16LayoutObjectsAnchor_Regular Fields">2 Regular Fields</a></li>
-<li><a href="#16LayoutObjectsAnchor_Merge Fields">1 Merge Fields</a></li>
-<li><a href="#16LayoutObjectsAnchor_Buttons">3 Buttons</a></li>
-<li><a href="#16LayoutObjectsAnchor_Popover Buttons">1 Popover Buttons</a></li>
-<li><a href="#16LayoutObjectsAnchor_Portals">1 Portals</a></li>
-</ul>
-</td><td><a href="#1065096TableAnchor_"><em>Map</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td>
+<td><a name="47LayoutAnchor_"/>Loading</td><td>No</td><td>Yes</td><td>
+<ul></ul>
+</td><td><a href="#1065099TableAnchor_"><em>Hero</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td>
 <ul>
 <li><a href="#77ScriptAnchor_">load</a></li>
-<li><a href="#73ScriptAnchor_">shutdown</a></li>
-<li><a href="#43ScriptAnchor_">spawnHero</a></li>
-<li><a href="#50ScriptAnchor_">performAction</a></li>
-<li><a href="#66ScriptAnchor_">door.bash</a></li>
-<li><a href="#64ScriptAnchor_">door.isLocked</a></li>
 </ul>
-</td><td>[File Default]</td><td>
-<ul>
-<b>OnLayoutKeystroke</b>
-<li>Script: <a href="#45ScriptAnchor_">moveHero</a></li>
-<li>Modes: Browse</li>
-</ul>
-</td><td><a href="#01valThemesSectionAnchor_">01</a></td>
+</td><td>[File Default]</td><td></td><td><a href="#01valThemesSectionAnchor_">01</a></td>
 </tr>
 <tr class="regularcharttext" valign="top">
 <td><a name="43LayoutAnchor_"/>New Adventure</td><td>No</td><td>Yes</td><td>
@@ -3663,13 +3762,6 @@
 <li><a href="#1ScriptAnchor_">startup</a></li>
 </ul>
 </td><td>[File Default]</td><td></td><td><a href="#01valThemesSectionAnchor_">01</a></td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td><a name="46LayoutAnchor_"/>Preferences</td><td>No</td><td>Yes</td><td>
-<ul>
-<li><a href="#46LayoutObjectsAnchor_Regular Fields">1 Regular Fields</a></li>
-</ul>
-</td><td><a href="#1065107TableAnchor_"><em>Preferences</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td></td><td>[File Default]</td><td></td><td><a href="#02valThemesSectionAnchor_">02</a></td>
 </tr>
 <tr class="regularcharttext" valign="top">
 <td><a name="44LayoutAnchor_"/>Tavern</td><td>No</td><td>Yes</td><td>
@@ -3685,13 +3777,31 @@
 </td><td>[File Default]</td><td></td><td><a href="#01valThemesSectionAnchor_">01</a></td>
 </tr>
 <tr class="regularcharttext" valign="top">
-<td><a name="47LayoutAnchor_"/>Loading</td><td>No</td><td>Yes</td><td>
-<ul></ul>
-</td><td><a href="#1065099TableAnchor_"><em>Hero</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td>
+<td><a name="16LayoutAnchor_"/>Map</td><td>No</td><td>Yes</td><td>
+<ul>
+<li><a href="#16LayoutObjectsAnchor_Regular Fields">2 Regular Fields</a></li>
+<li><a href="#16LayoutObjectsAnchor_Merge Fields">1 Merge Fields</a></li>
+<li><a href="#16LayoutObjectsAnchor_Buttons">3 Buttons</a></li>
+<li><a href="#16LayoutObjectsAnchor_Popover Buttons">1 Popover Buttons</a></li>
+<li><a href="#16LayoutObjectsAnchor_Portals">1 Portals</a></li>
+</ul>
+</td><td><a href="#1065096TableAnchor_"><em>Map</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td>
 <ul>
 <li><a href="#77ScriptAnchor_">load</a></li>
+<li><a href="#73ScriptAnchor_">shutdown</a></li>
+<li><a href="#43ScriptAnchor_">spawnHero</a></li>
+<li><a href="#50ScriptAnchor_">performAction</a></li>
+<li><a href="#72ScriptAnchor_">rat</a></li>
+<li><a href="#66ScriptAnchor_">door.bash</a></li>
+<li><a href="#64ScriptAnchor_">door.isLocked</a></li>
 </ul>
-</td><td>[File Default]</td><td></td><td><a href="#01valThemesSectionAnchor_">01</a></td>
+</td><td>[File Default]</td><td>
+<ul>
+<b>OnLayoutKeystroke</b>
+<li>Script: <a href="#45ScriptAnchor_">moveHero</a></li>
+<li>Modes: Browse</li>
+</ul>
+</td><td><a href="#01valThemesSectionAnchor_">01</a></td>
 </tr>
 <tr class="regularcharttext" valign="top">
 <td><a name="38LayoutAnchor_"/>Equipment</td><td>No</td><td>Yes</td><td>
@@ -3707,6 +3817,7 @@
 </ul>
 </td><td><a href="#1065099TableAnchor_"><em>Hero</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td>
 <ul>
+<li><a href="#73ScriptAnchor_">shutdown</a></li>
 <li><a href="#42ScriptAnchor_">newMap</a></li>
 <li><a href="#43ScriptAnchor_">spawnHero</a></li>
 </ul>
@@ -3740,6 +3851,7 @@
 </ul>
 </td><td><a href="#1065098TableAnchor_"><em>Locations</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td>
 <ul>
+<li><a href="#72ScriptAnchor_">rat</a></li>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
 <li><a href="#64ScriptAnchor_">door.isLocked</a></li>
 </ul>
@@ -3758,6 +3870,13 @@
 <li><a href="#43ScriptAnchor_">spawnHero</a></li>
 </ul>
 </td><td>[File Default]</td><td></td><td><a href="#01valThemesSectionAnchor_">01</a></td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td><a name="46LayoutAnchor_"/>Preferences</td><td>No</td><td>Yes</td><td>
+<ul>
+<li><a href="#46LayoutObjectsAnchor_Regular Fields">1 Regular Fields</a></li>
+</ul>
+</td><td><a href="#1065107TableAnchor_"><em>Preferences</em></a></td><td>On</td><td>Off</td><td>On</td><td>On</td><td></td><td>[File Default]</td><td></td><td><a href="#02valThemesSectionAnchor_">02</a></td>
 </tr>
 <tr class="regularcharttext" valign="top">
 <td><a name="45LayoutAnchor_"/>Saved</td><td>No</td><td>Yes</td><td>
@@ -3922,6 +4041,341 @@
 <li>Go to next field using: Tab key</li>
 </ul>
 </td><td colspan="1">Yes</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>
+<span class="partheading">Layout Objects: <a href="#47LayoutAnchor_">Loading</a></span>
+</p>
+<p>
+<span class="partheading">Layout Objects: <a href="#43LayoutAnchor_">New Adventure</a></span>
+</p>
+<p>
+<span class="partheading"><a name="43LayoutObjectsAnchor_Buttons"/>Buttons</span>
+</p>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="3">Button Properties</td><td colspan="1" width="14%">Coordinates</td><td colspan="3" width="43%">Script/Script Step</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="3"><a name="43Button132.000000035.0000000154.0000000209.0000000LayoutObjectAnchor_"/><ul>
+<b>Type:</b>
+<li>Text: New</li>
+</ul>
+<ul>
+<b>Layout Name:</b>
+<li><a href="#43LayoutAnchor_">New Adventure</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>Top: 132 pt</li>
+<li>Left: 35 pt</li>
+<li>Bottom: 154 pt</li>
+<li>Right: 209 pt</li>
+</ul>
+<ul>
+<li>Anchoring: Left, Top</li>
+</ul>
+</td><td colspan="3">Perform Script [ &ldquo;newMap&rdquo;; Parameter: "newStart" ]<p>
+<b>Scripts:</b>
+</p>
+<ul>
+<li><a href="#42ScriptAnchor_">newMap</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="3">Button Properties</td><td colspan="1" width="14%">Coordinates</td><td colspan="3" width="43%">Script/Script Step</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="3"><a name="43Button132.0000000222.0000000154.0000000303.0000000LayoutObjectAnchor_"/><ul>
+<b>Type:</b>
+<li>Text: Quit</li>
+</ul>
+<ul>
+<b>Layout Name:</b>
+<li><a href="#43LayoutAnchor_">New Adventure</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>Top: 132 pt</li>
+<li>Left: 222 pt</li>
+<li>Bottom: 154 pt</li>
+<li>Right: 303 pt</li>
+</ul>
+<ul>
+<li>Anchoring: Left, Top</li>
+</ul>
+</td><td colspan="3">Exit Application</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>
+<span class="partheading">Layout Objects: <a href="#44LayoutAnchor_">Tavern</a></span>
+</p>
+<p>
+<span class="partheading"><a name="44LayoutObjectsAnchor_Regular Fields"/>Regular Fields</span>
+</p>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartheaders" valign="top">
+<td colspan="6" class="privsetfirst">Field Name: <a href="#13911FieldAnchor_"><em>Hero</em>::name</a></td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td class="chartheaders" colspan="2">Field Properties</td><td class="chartheaders" width="14%" colspan="1">Coordinates</td><td class="chartheaders" width="17%" colspan="1">Field Format</td><td class="chartheaders" width="30%" colspan="1">Field Behavior</td><td class="chartheaders" width="10%" colspan="1">Quick Find</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="Field45.000000011.000000066.0000000168.0000000LayoutObjectAnchor_"/><ul>
+<b>Layout Name:</b>
+<li><a href="#44LayoutAnchor_">Tavern</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>Top: 45 pt</li>
+<li>Left: 11 pt</li>
+<li>Bottom: 66 pt</li>
+<li>Right: 168 pt</li>
+</ul>
+<ul>
+<li>Anchoring: Left, Top</li>
+</ul>
+</td><td colspan="1">Field Format: <ul>
+<li>Edit Box</li>
+</ul>
+</td><td colspan="1">Field Behavior:<ul>
+<li>Allow field to be entered: In Find mode</li>
+<li>Touch keyboard type: Default for Data Type</li>
+<li>Go to next field using: Tab key</li>
+</ul>
+</td><td colspan="1">Yes</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartheaders" valign="top">
+<td colspan="6" class="privsetfirst">Field Name: <a href="#1397FieldAnchor_"><em>Hero</em>::level</a></td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td class="chartheaders" colspan="2">Field Properties</td><td class="chartheaders" width="14%" colspan="1">Coordinates</td><td class="chartheaders" width="17%" colspan="1">Field Format</td><td class="chartheaders" width="30%" colspan="1">Field Behavior</td><td class="chartheaders" width="10%" colspan="1">Quick Find</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="Field45.0000000182.000000066.0000000217.0000000LayoutObjectAnchor_"/><ul>
+<b>Layout Name:</b>
+<li><a href="#44LayoutAnchor_">Tavern</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>Top: 45 pt</li>
+<li>Left: 182 pt</li>
+<li>Bottom: 66 pt</li>
+<li>Right: 217 pt</li>
+</ul>
+<ul>
+<li>Anchoring: Left, Top</li>
+</ul>
+</td><td colspan="1">Field Format: <ul>
+<li>Edit Box</li>
+</ul>
+</td><td colspan="1">Field Behavior:<ul>
+<li>Allow field to be entered: In Find mode</li>
+<li>Touch keyboard type: Default for Data Type</li>
+<li>Go to next field using: Tab key</li>
+</ul>
+</td><td colspan="1">Yes</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartheaders" valign="top">
+<td colspan="6" class="privsetfirst">Field Name: <a href="#13912FieldAnchor_"><em>Hero</em>::experience</a></td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td class="chartheaders" colspan="2">Field Properties</td><td class="chartheaders" width="14%" colspan="1">Coordinates</td><td class="chartheaders" width="17%" colspan="1">Field Format</td><td class="chartheaders" width="30%" colspan="1">Field Behavior</td><td class="chartheaders" width="10%" colspan="1">Quick Find</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="Field45.0000000243.000000066.0000000319.0000000LayoutObjectAnchor_"/><ul>
+<b>Layout Name:</b>
+<li><a href="#44LayoutAnchor_">Tavern</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>Top: 45 pt</li>
+<li>Left: 243 pt</li>
+<li>Bottom: 66 pt</li>
+<li>Right: 319 pt</li>
+</ul>
+<ul>
+<li>Anchoring: Left, Top</li>
+</ul>
+</td><td colspan="1">Field Format: <ul>
+<li>Edit Box</li>
+</ul>
+</td><td colspan="1">Field Behavior:<ul>
+<li>Allow field to be entered: In Find mode</li>
+<li>Touch keyboard type: Default for Data Type</li>
+<li>Go to next field using: Tab key</li>
+</ul>
+</td><td colspan="1">Yes</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>
+<span class="partheading"><a name="44LayoutObjectsAnchor_Buttons"/>Buttons</span>
+</p>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="3">Button Properties</td><td colspan="1" width="14%">Coordinates</td><td colspan="3" width="43%">Script/Script Step</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="3"><a name="44Button177.0000000239.0000000203.0000000330.0000000LayoutObjectAnchor_"/><ul>
+<b>Type:</b>
+<li>Text: Onward!</li>
+</ul>
+<ul>
+<b>Layout Name:</b>
+<li><a href="#44LayoutAnchor_">Tavern</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>Top: 177 pt</li>
+<li>Left: 239 pt</li>
+<li>Bottom: 203 pt</li>
+<li>Right: 330 pt</li>
+</ul>
+<ul>
+<li>Anchoring: Left, Top</li>
+</ul>
+</td><td colspan="3">Perform Script [ &ldquo;load&rdquo; ]<p>
+<b>Scripts:</b>
+</p>
+<ul>
+<li><a href="#77ScriptAnchor_">load</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="3">Button Properties</td><td colspan="1" width="14%">Coordinates</td><td colspan="3" width="43%">Script/Script Step</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="3"><a name="44Button177.0000000123.0000000203.0000000214.0000000LayoutObjectAnchor_"/><ul>
+<b>Type:</b>
+<li>Text: New</li>
+</ul>
+<ul>
+<b>Layout Name:</b>
+<li><a href="#44LayoutAnchor_">Tavern</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>Top: 177 pt</li>
+<li>Left: 123 pt</li>
+<li>Bottom: 203 pt</li>
+<li>Right: 214 pt</li>
+</ul>
+<ul>
+<li>Anchoring: Left, Top</li>
+</ul>
+</td><td colspan="3">Perform Script [ &ldquo;newMap&rdquo;; Parameter: "newStart" ]<p>
+<b>Scripts:</b>
+</p>
+<ul>
+<li><a href="#42ScriptAnchor_">newMap</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="3">Button Properties</td><td colspan="1" width="14%">Coordinates</td><td colspan="3" width="43%">Script/Script Step</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="3"><a name="44Button177.00000008.0000000203.000000099.0000000LayoutObjectAnchor_"/><ul>
+<b>Type:</b>
+<li>Text: Quit</li>
+</ul>
+<ul>
+<b>Layout Name:</b>
+<li><a href="#44LayoutAnchor_">Tavern</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>Top: 177 pt</li>
+<li>Left: 8 pt</li>
+<li>Bottom: 203 pt</li>
+<li>Right: 99 pt</li>
+</ul>
+<ul>
+<li>Anchoring: Left, Top</li>
+</ul>
+</td><td colspan="3">Close File [ Current File ]</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>
+<span class="partheading"><a name="44LayoutObjectsAnchor_Portals"/>Portals</span>
+</p>
+<table border="1" width="100%">
+<tbody>
+<tr class="chartsubheads" valign="top">
+<td colspan="2">Portal Properties</td><td colspan="1" width="15%">Coordinates</td><td colspan="1" width="10%">Fields</td><td colspan="2">Options</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="44Portal42.00000008.0000000169.0000000330.0000000LayoutObjectAnchor_"/><ul>
+<b>Table:</b>
+<li><a href="#1065099TableAnchor_"><em>Hero</em></a></li>
+</ul>
+<ul>
+<b>Layout Name:</b>
+<li><a href="#44LayoutAnchor_">Tavern</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>Top: 42 pt</li>
+<li>Left: 8 pt</li>
+<li>Bottom: 169 pt</li>
+<li>Right: 330 pt</li>
+</ul>
+<ul>
+<li>Anchoring: Left, Top</li>
+</ul>
+</td><td colspan="1">Field Objects<ul>
+<li><a href="#13911FieldAnchor_"><em>Hero</em>::name</a> at (45, 11, 66, 168)</li>
+<li><a href="#1397FieldAnchor_"><em>Hero</em>::level</a> at (45, 182, 66, 217)</li>
+<li><a href="#13912FieldAnchor_"><em>Hero</em>::experience</a> at (45, 243, 66, 319)</li>
+</ul>
+</td><td colspan="2">
+<ul>
+<li>Sort records: Off</li>
+<li>Filter calculation: None</li>
+<li>Initial Row: 1</li>
+<li>Number of Rows: 5</li>
+<li>Show vertical scroll bar</li>
+<li>Allow deletion of portal records</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -4266,383 +4720,6 @@
 </tbody>
 </table>
 <br>
-<p>
-<span class="partheading">Layout Objects: <a href="#43LayoutAnchor_">New Adventure</a></span>
-</p>
-<p>
-<span class="partheading"><a name="43LayoutObjectsAnchor_Buttons"/>Buttons</span>
-</p>
-<table width="100%" border="1">
-<tbody>
-<tr class="chartsubheads" valign="top">
-<td colspan="3">Button Properties</td><td colspan="1" width="14%">Coordinates</td><td colspan="3" width="43%">Script/Script Step</td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td colspan="3"><a name="43Button132.000000035.0000000154.0000000209.0000000LayoutObjectAnchor_"/><ul>
-<b>Type:</b>
-<li>Text: New</li>
-</ul>
-<ul>
-<b>Layout Name:</b>
-<li><a href="#43LayoutAnchor_">New Adventure</a></li>
-</ul>
-</td><td colspan="1">
-<ul>
-<li>Top: 132 pt</li>
-<li>Left: 35 pt</li>
-<li>Bottom: 154 pt</li>
-<li>Right: 209 pt</li>
-</ul>
-<ul>
-<li>Anchoring: Left, Top</li>
-</ul>
-</td><td colspan="3">Perform Script [ &ldquo;newMap&rdquo;; Parameter: "newStart" ]<p>
-<b>Scripts:</b>
-</p>
-<ul>
-<li><a href="#42ScriptAnchor_">newMap</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-<br>
-<table width="100%" border="1">
-<tbody>
-<tr class="chartsubheads" valign="top">
-<td colspan="3">Button Properties</td><td colspan="1" width="14%">Coordinates</td><td colspan="3" width="43%">Script/Script Step</td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td colspan="3"><a name="43Button132.0000000222.0000000154.0000000303.0000000LayoutObjectAnchor_"/><ul>
-<b>Type:</b>
-<li>Text: Quit</li>
-</ul>
-<ul>
-<b>Layout Name:</b>
-<li><a href="#43LayoutAnchor_">New Adventure</a></li>
-</ul>
-</td><td colspan="1">
-<ul>
-<li>Top: 132 pt</li>
-<li>Left: 222 pt</li>
-<li>Bottom: 154 pt</li>
-<li>Right: 303 pt</li>
-</ul>
-<ul>
-<li>Anchoring: Left, Top</li>
-</ul>
-</td><td colspan="3">Exit Application</td>
-</tr>
-</tbody>
-</table>
-<br>
-<p>
-<span class="partheading">Layout Objects: <a href="#46LayoutAnchor_">Preferences</a></span>
-</p>
-<p>
-<span class="partheading"><a name="46LayoutObjectsAnchor_Regular Fields"/>Regular Fields</span>
-</p>
-<table width="100%" border="1">
-<tbody>
-<tr class="chartheaders" valign="top">
-<td colspan="6" class="privsetfirst">Field Name: <a href="#1476FieldAnchor_"><em>Preferences</em>::userClipboard</a></td>
-</tr>
-<tr class="chartsubheads" valign="top">
-<td class="chartheaders" colspan="2">Field Properties</td><td class="chartheaders" width="14%" colspan="1">Coordinates</td><td class="chartheaders" width="17%" colspan="1">Field Format</td><td class="chartheaders" width="30%" colspan="1">Field Behavior</td><td class="chartheaders" width="10%" colspan="1">Quick Find</td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td colspan="2"><a name="46Field114.0000000138.0000000239.0000000391.0000000LayoutObjectAnchor_"/><ul>
-<b>Layout Name:</b>
-<li><a href="#46LayoutAnchor_">Preferences</a></li>
-</ul>
-</td><td colspan="1">
-<ul>
-<li>Top: 114 pt</li>
-<li>Left: 138 pt</li>
-<li>Bottom: 239 pt</li>
-<li>Right: 391 pt</li>
-</ul>
-<ul>
-<li>Anchoring: Left, Top</li>
-</ul>
-</td><td colspan="1">Field Format: <ul>
-<li>Edit Box</li>
-</ul>
-</td><td colspan="1">Field Behavior:<ul>
-<li>Allow field to be entered: In Find mode, In Browse mode</li>
-<li>Touch keyboard type: Default for Data Type</li>
-<li>Go to next field using: Tab key</li>
-</ul>
-</td><td colspan="1">No</td>
-</tr>
-</tbody>
-</table>
-<br>
-<p>
-<span class="partheading">Layout Objects: <a href="#44LayoutAnchor_">Tavern</a></span>
-</p>
-<p>
-<span class="partheading"><a name="44LayoutObjectsAnchor_Regular Fields"/>Regular Fields</span>
-</p>
-<table width="100%" border="1">
-<tbody>
-<tr class="chartheaders" valign="top">
-<td colspan="6" class="privsetfirst">Field Name: <a href="#13911FieldAnchor_"><em>Hero</em>::name</a></td>
-</tr>
-<tr class="chartsubheads" valign="top">
-<td class="chartheaders" colspan="2">Field Properties</td><td class="chartheaders" width="14%" colspan="1">Coordinates</td><td class="chartheaders" width="17%" colspan="1">Field Format</td><td class="chartheaders" width="30%" colspan="1">Field Behavior</td><td class="chartheaders" width="10%" colspan="1">Quick Find</td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td colspan="2"><a name="Field45.000000011.000000066.0000000168.0000000LayoutObjectAnchor_"/><ul>
-<b>Layout Name:</b>
-<li><a href="#44LayoutAnchor_">Tavern</a></li>
-</ul>
-</td><td colspan="1">
-<ul>
-<li>Top: 45 pt</li>
-<li>Left: 11 pt</li>
-<li>Bottom: 66 pt</li>
-<li>Right: 168 pt</li>
-</ul>
-<ul>
-<li>Anchoring: Left, Top</li>
-</ul>
-</td><td colspan="1">Field Format: <ul>
-<li>Edit Box</li>
-</ul>
-</td><td colspan="1">Field Behavior:<ul>
-<li>Allow field to be entered: In Find mode</li>
-<li>Touch keyboard type: Default for Data Type</li>
-<li>Go to next field using: Tab key</li>
-</ul>
-</td><td colspan="1">Yes</td>
-</tr>
-</tbody>
-</table>
-<br>
-<table width="100%" border="1">
-<tbody>
-<tr class="chartheaders" valign="top">
-<td colspan="6" class="privsetfirst">Field Name: <a href="#1397FieldAnchor_"><em>Hero</em>::level</a></td>
-</tr>
-<tr class="chartsubheads" valign="top">
-<td class="chartheaders" colspan="2">Field Properties</td><td class="chartheaders" width="14%" colspan="1">Coordinates</td><td class="chartheaders" width="17%" colspan="1">Field Format</td><td class="chartheaders" width="30%" colspan="1">Field Behavior</td><td class="chartheaders" width="10%" colspan="1">Quick Find</td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td colspan="2"><a name="Field45.0000000182.000000066.0000000217.0000000LayoutObjectAnchor_"/><ul>
-<b>Layout Name:</b>
-<li><a href="#44LayoutAnchor_">Tavern</a></li>
-</ul>
-</td><td colspan="1">
-<ul>
-<li>Top: 45 pt</li>
-<li>Left: 182 pt</li>
-<li>Bottom: 66 pt</li>
-<li>Right: 217 pt</li>
-</ul>
-<ul>
-<li>Anchoring: Left, Top</li>
-</ul>
-</td><td colspan="1">Field Format: <ul>
-<li>Edit Box</li>
-</ul>
-</td><td colspan="1">Field Behavior:<ul>
-<li>Allow field to be entered: In Find mode</li>
-<li>Touch keyboard type: Default for Data Type</li>
-<li>Go to next field using: Tab key</li>
-</ul>
-</td><td colspan="1">Yes</td>
-</tr>
-</tbody>
-</table>
-<br>
-<table width="100%" border="1">
-<tbody>
-<tr class="chartheaders" valign="top">
-<td colspan="6" class="privsetfirst">Field Name: <a href="#13912FieldAnchor_"><em>Hero</em>::experience</a></td>
-</tr>
-<tr class="chartsubheads" valign="top">
-<td class="chartheaders" colspan="2">Field Properties</td><td class="chartheaders" width="14%" colspan="1">Coordinates</td><td class="chartheaders" width="17%" colspan="1">Field Format</td><td class="chartheaders" width="30%" colspan="1">Field Behavior</td><td class="chartheaders" width="10%" colspan="1">Quick Find</td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td colspan="2"><a name="Field45.0000000243.000000066.0000000319.0000000LayoutObjectAnchor_"/><ul>
-<b>Layout Name:</b>
-<li><a href="#44LayoutAnchor_">Tavern</a></li>
-</ul>
-</td><td colspan="1">
-<ul>
-<li>Top: 45 pt</li>
-<li>Left: 243 pt</li>
-<li>Bottom: 66 pt</li>
-<li>Right: 319 pt</li>
-</ul>
-<ul>
-<li>Anchoring: Left, Top</li>
-</ul>
-</td><td colspan="1">Field Format: <ul>
-<li>Edit Box</li>
-</ul>
-</td><td colspan="1">Field Behavior:<ul>
-<li>Allow field to be entered: In Find mode</li>
-<li>Touch keyboard type: Default for Data Type</li>
-<li>Go to next field using: Tab key</li>
-</ul>
-</td><td colspan="1">Yes</td>
-</tr>
-</tbody>
-</table>
-<br>
-<p>
-<span class="partheading"><a name="44LayoutObjectsAnchor_Buttons"/>Buttons</span>
-</p>
-<table width="100%" border="1">
-<tbody>
-<tr class="chartsubheads" valign="top">
-<td colspan="3">Button Properties</td><td colspan="1" width="14%">Coordinates</td><td colspan="3" width="43%">Script/Script Step</td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td colspan="3"><a name="44Button177.0000000239.0000000203.0000000330.0000000LayoutObjectAnchor_"/><ul>
-<b>Type:</b>
-<li>Text: Onward!</li>
-</ul>
-<ul>
-<b>Layout Name:</b>
-<li><a href="#44LayoutAnchor_">Tavern</a></li>
-</ul>
-</td><td colspan="1">
-<ul>
-<li>Top: 177 pt</li>
-<li>Left: 239 pt</li>
-<li>Bottom: 203 pt</li>
-<li>Right: 330 pt</li>
-</ul>
-<ul>
-<li>Anchoring: Left, Top</li>
-</ul>
-</td><td colspan="3">Perform Script [ &ldquo;load&rdquo; ]<p>
-<b>Scripts:</b>
-</p>
-<ul>
-<li><a href="#77ScriptAnchor_">load</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-<br>
-<table width="100%" border="1">
-<tbody>
-<tr class="chartsubheads" valign="top">
-<td colspan="3">Button Properties</td><td colspan="1" width="14%">Coordinates</td><td colspan="3" width="43%">Script/Script Step</td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td colspan="3"><a name="44Button177.0000000123.0000000203.0000000214.0000000LayoutObjectAnchor_"/><ul>
-<b>Type:</b>
-<li>Text: New</li>
-</ul>
-<ul>
-<b>Layout Name:</b>
-<li><a href="#44LayoutAnchor_">Tavern</a></li>
-</ul>
-</td><td colspan="1">
-<ul>
-<li>Top: 177 pt</li>
-<li>Left: 123 pt</li>
-<li>Bottom: 203 pt</li>
-<li>Right: 214 pt</li>
-</ul>
-<ul>
-<li>Anchoring: Left, Top</li>
-</ul>
-</td><td colspan="3">Perform Script [ &ldquo;newMap&rdquo;; Parameter: "newStart" ]<p>
-<b>Scripts:</b>
-</p>
-<ul>
-<li><a href="#42ScriptAnchor_">newMap</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-<br>
-<table width="100%" border="1">
-<tbody>
-<tr class="chartsubheads" valign="top">
-<td colspan="3">Button Properties</td><td colspan="1" width="14%">Coordinates</td><td colspan="3" width="43%">Script/Script Step</td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td colspan="3"><a name="44Button177.00000008.0000000203.000000099.0000000LayoutObjectAnchor_"/><ul>
-<b>Type:</b>
-<li>Text: Quit</li>
-</ul>
-<ul>
-<b>Layout Name:</b>
-<li><a href="#44LayoutAnchor_">Tavern</a></li>
-</ul>
-</td><td colspan="1">
-<ul>
-<li>Top: 177 pt</li>
-<li>Left: 8 pt</li>
-<li>Bottom: 203 pt</li>
-<li>Right: 99 pt</li>
-</ul>
-<ul>
-<li>Anchoring: Left, Top</li>
-</ul>
-</td><td colspan="3">Close File [ Current File ]</td>
-</tr>
-</tbody>
-</table>
-<br>
-<p>
-<span class="partheading"><a name="44LayoutObjectsAnchor_Portals"/>Portals</span>
-</p>
-<table border="1" width="100%">
-<tbody>
-<tr class="chartsubheads" valign="top">
-<td colspan="2">Portal Properties</td><td colspan="1" width="15%">Coordinates</td><td colspan="1" width="10%">Fields</td><td colspan="2">Options</td>
-</tr>
-<tr class="regularcharttext" valign="top">
-<td colspan="2"><a name="44Portal42.00000008.0000000169.0000000330.0000000LayoutObjectAnchor_"/><ul>
-<b>Table:</b>
-<li><a href="#1065099TableAnchor_"><em>Hero</em></a></li>
-</ul>
-<ul>
-<b>Layout Name:</b>
-<li><a href="#44LayoutAnchor_">Tavern</a></li>
-</ul>
-</td><td colspan="1">
-<ul>
-<li>Top: 42 pt</li>
-<li>Left: 8 pt</li>
-<li>Bottom: 169 pt</li>
-<li>Right: 330 pt</li>
-</ul>
-<ul>
-<li>Anchoring: Left, Top</li>
-</ul>
-</td><td colspan="1">Field Objects<ul>
-<li><a href="#13911FieldAnchor_"><em>Hero</em>::name</a> at (45, 11, 66, 168)</li>
-<li><a href="#1397FieldAnchor_"><em>Hero</em>::level</a> at (45, 182, 66, 217)</li>
-<li><a href="#13912FieldAnchor_"><em>Hero</em>::experience</a> at (45, 243, 66, 319)</li>
-</ul>
-</td><td colspan="2">
-<ul>
-<li>Sort records: Off</li>
-<li>Filter calculation: None</li>
-<li>Initial Row: 1</li>
-<li>Number of Rows: 5</li>
-<li>Show vertical scroll bar</li>
-<li>Allow deletion of portal records</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-<br>
-<p>
-<span class="partheading">Layout Objects: <a href="#47LayoutAnchor_">Loading</a></span>
-</p>
 <p>
 <span class="partheading">Layout Objects: <a href="#38LayoutAnchor_">Equipment</a></span>
 </p>
@@ -5562,6 +5639,48 @@
 </table>
 <br>
 <p>
+<span class="partheading">Layout Objects: <a href="#46LayoutAnchor_">Preferences</a></span>
+</p>
+<p>
+<span class="partheading"><a name="46LayoutObjectsAnchor_Regular Fields"/>Regular Fields</span>
+</p>
+<table width="100%" border="1">
+<tbody>
+<tr class="chartheaders" valign="top">
+<td colspan="6" class="privsetfirst">Field Name: <a href="#1476FieldAnchor_"><em>Preferences</em>::userClipboard</a></td>
+</tr>
+<tr class="chartsubheads" valign="top">
+<td class="chartheaders" colspan="2">Field Properties</td><td class="chartheaders" width="14%" colspan="1">Coordinates</td><td class="chartheaders" width="17%" colspan="1">Field Format</td><td class="chartheaders" width="30%" colspan="1">Field Behavior</td><td class="chartheaders" width="10%" colspan="1">Quick Find</td>
+</tr>
+<tr class="regularcharttext" valign="top">
+<td colspan="2"><a name="46Field114.0000000138.0000000239.0000000391.0000000LayoutObjectAnchor_"/><ul>
+<b>Layout Name:</b>
+<li><a href="#46LayoutAnchor_">Preferences</a></li>
+</ul>
+</td><td colspan="1">
+<ul>
+<li>Top: 114 pt</li>
+<li>Left: 138 pt</li>
+<li>Bottom: 239 pt</li>
+<li>Right: 391 pt</li>
+</ul>
+<ul>
+<li>Anchoring: Left, Top</li>
+</ul>
+</td><td colspan="1">Field Format: <ul>
+<li>Edit Box</li>
+</ul>
+</td><td colspan="1">Field Behavior:<ul>
+<li>Allow field to be entered: In Find mode, In Browse mode</li>
+<li>Touch keyboard type: Default for Data Type</li>
+<li>Go to next field using: Tab key</li>
+</ul>
+</td><td colspan="1">No</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>
 <span class="partheading">Layout Objects: <a href="#45LayoutAnchor_">Saved</a></span>
 </p>
 <p>
@@ -5752,6 +5871,9 @@
 <td class="script_hier"><a name="42ScriptAnchor_toc"></a><a href="#42ScriptAnchor_">newMap</a></td>
 </tr>
 <tr>
+<td class="script_hier"><a name="78ScriptAnchor_toc"></a><a href="#78ScriptAnchor_">dynamicMapping</a></td>
+</tr>
+<tr>
 <td class="script_hier"><a name="44ScriptAnchor_toc"></a><a href="#44ScriptAnchor_">enterMap</a></td>
 </tr>
 </tbody>
@@ -5910,6 +6032,26 @@
 <li>#Set Variables</li>
 <li>Set Variable [ $$heroID; Value:Hero::id ]</li>
 <li>Set Variable [ $$heroName; Value:Hero::name ]</li>
+<li>Set Variable [ $$heroLevel; Value:Hero::level ]</li>
+<li>Set Variable [ $$heroExperience; Value:Hero::experience ]</li>
+<li>Set Variable [ $$heroEquipment; Value:ExecuteSQL ( "
+
+SELECT item, category
+FROM Equipment
+WHERE fk_hero = ?";
+" "; "&para;";
+$$heroID
+
+ ) ]</li>
+<li>Set Variable [ $$heroInventory; Value:ExecuteSQL ( "
+
+SELECT item, quantity
+FROM Inventory
+WHERE fk_hero = ?";
+" "; "&para;";
+$$heroID
+
+ ) ]</li>
 <li></li>
 <li>#Load saved data</li>
 <li>Go to Layout [ &ldquo;Saved&rdquo; (Saved) ]</li>
@@ -5963,6 +6105,8 @@
 <ul>
 <li><a href="#1391FieldAnchor_"><em>Hero</em>::id</a></li>
 <li><a href="#13911FieldAnchor_"><em>Hero</em>::name</a></li>
+<li><a href="#1397FieldAnchor_"><em>Hero</em>::level</a></li>
+<li><a href="#13912FieldAnchor_"><em>Hero</em>::experience</a></li>
 <li><a href="#1466FieldAnchor_"><em>Saved</em>::heroID</a></li>
 <li><a href="#1467FieldAnchor_"><em>Saved</em>::map</a></li>
 <li><a href="#1469FieldAnchor_"><em>Saved</em>::beneath</a></li>
@@ -6205,6 +6349,15 @@
 <li>Set Field [ Saved::heroPosition; $$heroPosition ]</li>
 <li>Set Field [ Saved::player; $$player ]</li>
 <li></li>
+<li>#Update saved experience and level gains</li>
+<li>Go to Layout [ &ldquo;Hero&rdquo; (Hero) ]</li>
+<li>Perform Find [ Specified Find Requests: Find Records; Criteria: Hero::id: &ldquo;$$heroID&rdquo; ]
+[ Restore ]</li>
+<li>Set Field [ Hero::level; $$heroLevel ]</li>
+<li>Set Field [ Hero::experience; $$heroExperience ]</li>
+<li>Set Field [ Hero::hp; $$heroHP ]</li>
+<li>Set Field [ Hero::mp; $$heroMP ]</li>
+<li></li>
 <li>#Delete Everything</li>
 <li>Go to Layout [ &ldquo;MapTile&rdquo; (MapTile) ]</li>
 <li>Show All Records</li>
@@ -6233,6 +6386,11 @@
 <li><a href="#1469FieldAnchor_"><em>Saved</em>::beneath</a></li>
 <li><a href="#14610FieldAnchor_"><em>Saved</em>::heroPosition</a></li>
 <li><a href="#14612FieldAnchor_"><em>Saved</em>::player</a></li>
+<li><a href="#1391FieldAnchor_"><em>Hero</em>::id</a></li>
+<li><a href="#1397FieldAnchor_"><em>Hero</em>::level</a></li>
+<li><a href="#13912FieldAnchor_"><em>Hero</em>::experience</a></li>
+<li><a href="#1396FieldAnchor_"><em>Hero</em>::hp</a></li>
+<li><a href="#13910FieldAnchor_"><em>Hero</em>::mp</a></li>
 </ul>
 </td>
 </tr>
@@ -6247,12 +6405,14 @@
 <li><a href="#16LayoutAnchor_">Map</a></li>
 <li><a href="#27LayoutAnchor_">MapTile</a></li>
 <li><a href="#45LayoutAnchor_">Saved</a></li>
+<li><a href="#36LayoutAnchor_">Hero</a></li>
 </ul>
 </td>
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">Tables used in this script</td><td class="regularcharttext">
 <ul>
+<li><a href="#139BaseTableAnchor_">Hero</a></li>
 <li><a href="#136BaseTableAnchor_">Map</a></li>
 <li><a href="#137BaseTableAnchor_">MapTile</a></li>
 <li><a href="#146BaseTableAnchor_">Saved</a></li>
@@ -6262,6 +6422,7 @@
 <tr vAlign="top">
 <td class="chartheadersnobg">Table occurrences used by this script</td><td class="regularcharttext">
 <ul>
+<li><a href="#1065099TableAnchor_"><em>Hero</em></a></li>
 <li><a href="#1065096TableAnchor_"><em>Map</em></a></li>
 <li><a href="#1065097TableAnchor_"><em>MapTile</em></a></li>
 <li><a href="#1065106TableAnchor_"><em>Saved</em></a></li>
@@ -6570,7 +6731,7 @@ $safetyCheck = 2; "Your platform doesn't support creating local backups in this 
 <table class="script_navbar">
 <tbody>
 <tr class="script_navbar">
-<a name="42ScriptAnchor_"></a><td class="script_navbar"></td><td class="script_navbar"><a href="#54ScriptAnchor_"><span>Parent Folder: [Map]</span></a></td><td class="script_navbar"><a href="#44ScriptAnchor_"><span>Next Script: [enterMap]</span></a></td>
+<a name="42ScriptAnchor_"></a><td class="script_navbar"></td><td class="script_navbar"><a href="#54ScriptAnchor_"><span>Parent Folder: [Map]</span></a></td><td class="script_navbar"><a href="#78ScriptAnchor_"><span>Next Script: [dynamicMapping]</span></a></td>
 </tr>
 </tbody>
 </table>
@@ -6588,9 +6749,9 @@ $safetyCheck = 2; "Your platform doesn't support creating local backups in this 
 <tr vAlign="top">
 <td class="chartheadersnobg">Layouts that use this script</td><td class="regularcharttext">
 <ul>
-<li><a href="#16LayoutAnchor_">Map</a></li>
 <li><a href="#43LayoutAnchor_">New Adventure</a></li>
 <li><a href="#44LayoutAnchor_">Tavern</a></li>
+<li><a href="#16LayoutAnchor_">Map</a></li>
 </ul>
 </td>
 </tr>
@@ -6774,7 +6935,447 @@ $obitRoll = 6; "Murdered until dead.";
 <table class="script_navbar">
 <tbody>
 <tr class="script_navbar">
-<a name="44ScriptAnchor_"></a><td class="script_navbar"><a href="#42ScriptAnchor_"><span>Previous Script: [newMap]</span></a></td><td class="script_navbar"><a href="#54ScriptAnchor_"><span>Parent Folder: [Map]</span></a></td><td class="script_navbar"></td>
+<a name="78ScriptAnchor_"></a><td class="script_navbar"><a href="#42ScriptAnchor_"><span>Previous Script: [newMap]</span></a></td><td class="script_navbar"><a href="#54ScriptAnchor_"><span>Parent Folder: [Map]</span></a></td><td class="script_navbar"><a href="#44ScriptAnchor_"><span>Next Script: [enterMap]</span></a></td>
+</tr>
+</tbody>
+</table>
+<table width="100%" border="1">
+<tbody>
+<tr class="privsetfirst" vAlign="top">
+<td width="35%">Script Name</td><td width="65%">dynamicMapping</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Run script with full access privileges</td><td class="regularcharttext">Off</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Include In Menu</td><td class="regularcharttext">No</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Layouts that use this script</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Scripts that use this script</td><td class="regularcharttext">
+<ul>
+<li><a href="#66ScriptAnchor_">door.bash</a></li>
+<li><a href="#64ScriptAnchor_">door.isLocked</a></li>
+<li><a href="#65ScriptAnchor_">door.openClose</a></li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartsubheads" colSpan="2">Script Definition</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Script Steps</td><td class="regularcharttext">
+<ul>
+<li>#c2020 Travis Witt</li>
+<li>#Generate a map as the player walks around</li>
+<li>Set Error Capture [ On ]</li>
+<li></li>
+<li>#Variables</li>
+<li>Set Variable [ $direction; Value:Get ( ScriptParameter ) ]</li>
+<li>Set Variable [ $length; Value:roll.dX ( 1; 12 ) + 1 ]</li>
+<li>Set Variable [ $width; Value:If ( $$locationType = "hall"; roll.dX ( 1; 12 ) + 1; 1 ) ]</li>
+<li>Set Variable [ $hasMonster; Value:If ( $$locationType = "hall"; roll.dX ( 1; 6 ); roll.dX ( 1; 4 ) ) ]</li>
+<li></li>
+<li>#Reveal a new room or hall</li>
+<li>If [ $$locationType = "room" ]</li>
+<li>#Youre leaving a room and entering a hall</li>
+<li>Set Variable [ $hallPosition; Value:Case ( 
+
+$direction = "up"; 
+(LeftWords ( $$heroPosition; 1 ) - 2 ) &amp; " " &amp; RightWords ( $$heroPosition; 1 );
+$direction = "down"; 
+(LeftWords ( $$heroPosition; 1 ) + 2 ) &amp; " " &amp; RightWords ( $$heroPosition; 1 );
+$direction = "left"; 
+LeftWords ( $$heroPosition; 1 ) &amp; " " &amp; (RightWords ( $$heroPosition; 1 ) - 2 );
+$direction = "right"; 
+LeftWords ( $$heroPosition; 1 ) &amp; " " &amp; (RightWords ( $$heroPosition; 1 ) + 2 );
+
+ ) ]</li>
+<li></li>
+<li>#Make sure the path is clear</li>
+<li>Set Variable [ $path; Value:Case ( 
+
+$direction = "up"; "-2";
+$direction = "down"; "1";
+$direction = "left"; "0";
+$direction = "right"; "0";
+
+ ) ]</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) + GetAsNumber ( $path ) ]
+[ Select; No dialog ]</li>
+<li>Set Variable [ $deadEnd; Value:If ( 
+
+Case ( 
+
+Middle ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1 ) = "."; 1;
+Middle ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1 ) = "/"; 1;
+Middle ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1 ) = "%"; 1;
+
+ )
+
+; 0; 1 ) ]</li>
+<li>If [ $deadEnd = 1 ]</li>
+<li>Set Field [ Map::log; "You found a dead end."
+ &amp; &para; &amp;  Map::log ]</li>
+<li>Exit Script [  ]</li>
+<li>End If</li>
+<li></li>
+<li>#Draw hall</li>
+<li>Set Variable [ $i; Value:1 ]</li>
+<li>If [ $direction = "up" ]</li>
+<li>#up</li>
+<li>Loop</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) - ($i + 1) ]
+[ Select; No dialog ]</li>
+<li>If [ Get ( ActivePortalRowNumber ) &le; 1 ]</li>
+<li>Exit Script [  ]</li>
+<li>End If</li>
+<li>Set Variable [ $char; Value:Middle ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1 ) ]</li>
+<li>If [ $char = "." ]</li>
+<li></li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $hallPosition; 1 ) - 1 ); 1; "#" ) ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $hallPosition; 1 ) + 1 ); 1; "#" ) ]</li>
+<li>If [ $i = $length ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1; "-" ) ]</li>
+<li>End If</li>
+<li>Set Variable [ $i; Value:$i + 1 ]</li>
+<li>End If</li>
+<li>Exit Loop If [ $i &gt; $length ]</li>
+<li>End Loop</li>
+<li>Else If [ $direction = "down" ]</li>
+<li>#down</li>
+<li>Loop</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) + ($i + 1) ]
+[ Select; No dialog ]</li>
+<li>If [ Get ( ActivePortalRowNumber ) &ge; 30 ]</li>
+<li>Exit Script [  ]</li>
+<li>End If</li>
+<li>Set Variable [ $char; Value:Middle ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1 ) ]</li>
+<li>If [ $char = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $hallPosition; 1 ) - 1 ); 1; "#" ) ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $hallPosition; 1 ) + 1 ); 1; "#" ) ]</li>
+<li>If [ $i = $length ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1; "-" ) ]</li>
+<li>End If</li>
+<li>Set Variable [ $i; Value:$i + 1 ]</li>
+<li>End If</li>
+<li>Exit Loop If [ $i &gt; $length ]</li>
+<li>End Loop</li>
+<li>Else If [ $direction = "left" ]</li>
+<li>#left</li>
+<li>Loop</li>
+<li>Go to Portal Row [ LeftWords ( $hallPosition; 1 ) ]
+[ Select; No dialog ]</li>
+<li>If [ ( RightWords ( $hallPosition; 1 ) - 1 ) &le; 1 ]</li>
+<li>Exit Script [  ]</li>
+<li>End If</li>
+<li>Set Variable [ $char; Value:Middle ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1 ) ]</li>
+<li>If [ $char = "." ]</li>
+<li>Go to Portal Row [ LeftWords ( $hallPosition; 1 ) - 1 ]
+[ Select; No dialog ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1; "#" ) ]</li>
+<li>Go to Portal Row [ LeftWords ( $hallPosition; 1 ) + 1 ]
+[ Select; No dialog ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1; "#" ) ]</li>
+<li>If [ $i = $length ]</li>
+<li>Go to Portal Row [ LeftWords ( $hallPosition; 1 ) ]
+[ Select; No dialog ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1; "|" ) ]</li>
+<li>End If</li>
+<li>Set Variable [ $hallPosition; Value:LeftWords ( $hallPosition; 1 ) &amp; " " &amp; ( RightWords ( $hallPosition; 1 ) - 1 ) ]</li>
+<li>Set Variable [ $i; Value:$i + 1 ]</li>
+<li>End If</li>
+<li>Exit Loop If [ $i &gt; $length ]</li>
+<li>End Loop</li>
+<li>Else If [ $direction = "right" ]</li>
+<li>#right</li>
+<li>Loop</li>
+<li>If [ ( RightWords ( $hallPosition; 1 ) - 1 ) &ge; 60 ]</li>
+<li>Exit Script [  ]</li>
+<li>End If</li>
+<li>Set Variable [ $char; Value:Middle ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1 ) ]</li>
+<li>If [ $char = "." ]</li>
+<li>Go to Portal Row [ LeftWords ( $hallPosition; 1 ) - 1 ]
+[ Select; No dialog ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1; "#" ) ]</li>
+<li>Go to Portal Row [ LeftWords ( $hallPosition; 1 ) + 1 ]
+[ Select; No dialog ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1; "#" ) ]</li>
+<li>If [ $i = $length ]</li>
+<li>Go to Portal Row [ LeftWords ( $hallPosition; 1 ) ]
+[ Select; No dialog ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; RightWords ( $hallPosition; 1 ); 1; "|" ) ]</li>
+<li>End If</li>
+<li>Set Variable [ $hallPosition; Value:LeftWords ( $hallPosition; 1 ) &amp; " " &amp; ( RightWords ( $hallPosition; 1 ) + 1 ) ]</li>
+<li>Set Variable [ $i; Value:$i + 1 ]</li>
+<li>End If</li>
+<li>Exit Loop If [ $i &gt; $length ]</li>
+<li>End Loop</li>
+<li>End If</li>
+<li>Else</li>
+<li>#You're leaving a hall and entering a room</li>
+<li>Set Variable [ $roomPosition; Value:Case ( 
+
+$direction = "up"; 
+(LeftWords ( $$heroPosition; 1 ) - 2 ) &amp; " " &amp; RightWords ( $$heroPosition; 1 );
+$direction = "down"; 
+(LeftWords ( $$heroPosition; 1 ) + 2 ) &amp; " " &amp; RightWords ( $$heroPosition; 1 );
+$direction = "left"; 
+LeftWords ( $$heroPosition; 1 ) &amp; " " &amp; (RightWords ( $$heroPosition; 1 ) - 2 );
+$direction = "right"; 
+LeftWords ( $$heroPosition; 1 ) &amp; " " &amp; (RightWords ( $$heroPosition; 1 ) + 2 );
+
+ ) ]</li>
+<li></li>
+<li>#Make sure the path is clear</li>
+<li>Set Variable [ $path; Value:Case ( 
+
+$direction = "up"; "-2";
+$direction = "down"; "1";
+$direction = "left"; "0";
+$direction = "right"; "0";
+
+ ) ]</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) + GetAsNumber ( $path ) ]
+[ Select; No dialog ]</li>
+<li>Set Variable [ $deadEnd; Value:If ( 
+
+Case ( 
+
+Middle ( MapTile::tile; RightWords ( $roomPosition; 1 ); 1 ) = "."; 1;
+Middle ( MapTile::tile; RightWords ( $roomPosition; 1 ); 1 ) = "/"; 1;
+Middle ( MapTile::tile; RightWords ( $roomPosition; 1 ); 1 ) = "%"; 1;
+
+ )
+
+; 0; 1 ) ]</li>
+<li>If [ $deadEnd = 1 ]</li>
+<li>Set Field [ Map::log; "You found a dead end."
+ &amp; &para; &amp;  Map::log ]</li>
+<li>Exit Script [  ]</li>
+<li>End If</li>
+<li></li>
+<li>#Draw Room</li>
+<li>If [ $direction = "up" ]</li>
+<li>#up</li>
+<li>If [ Get ( ActivePortalRowNumber ) &le; 1 ]</li>
+<li>Exit Script [  ]</li>
+<li>End If</li>
+<li>Set Variable [ $i; Value:1 ]</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) - 1 ]
+[ No dialog ]</li>
+<li>Loop</li>
+<li>If [ Middle ( MapTile::tile; (RightWords ( $$heroPosition; 1 ) - ($i + 1) ); 1 ) = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) - ( $i + 1 ) ); 1; "#" ) ]</li>
+<li>Set Variable [ $i; Value:$i + 1 ]</li>
+<li>End If</li>
+<li>Exit Loop If [ Middle ( MapTile::tile; (RightWords ( $$heroPosition; 1 ) - ($i + 1) ); 1 ) = "#" or
+$i &ge; ( $width / 2 ) or
+RightWords ( $$heroPosition; 1 ) - $i &le; 1 ]</li>
+<li>End Loop</li>
+<li>Set Variable [ $leftWall; Value:$i ]</li>
+<li>Set Variable [ $i; Value:1 ]</li>
+<li>Loop</li>
+<li>If [ Middle ( MapTile::tile; (RightWords ( $$heroPosition; 1 ) + ($i + 1) ); 1 ) = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) + ( $i + 1 ) ); 1; "#" ) ]</li>
+<li>Set Variable [ $i; Value:$i + 1 ]</li>
+<li>End If</li>
+<li>Exit Loop If [ Middle ( MapTile::tile; (RightWords ( $$heroPosition; 1 ) - ($i + 1) ); 1 ) = "#" or
+$i &ge; ( $width / 2 ) or
+RightWords ( $$heroPosition; 1 ) + $i &ge; 60 ]</li>
+<li>End Loop</li>
+<li>Set Variable [ $rightWall; Value:$i ]</li>
+<li>Set Variable [ $i; Value:1 ]</li>
+<li>Loop</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) - ($i + 1) ]
+[ Select; No dialog ]</li>
+<li>Set Variable [ $j; Value:1 ]</li>
+<li></li>
+<li>#leftWall</li>
+<li>Loop</li>
+<li>If [ Middle ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) - $leftWall ); 1 ) = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) - $leftWall ); 1; "#" ) ]</li>
+<li>Set Variable [ $leftDone; Value:1 ]</li>
+<li>Else</li>
+<li>Set Variable [ $leftWall; Value:$leftWall - 1 ]</li>
+<li>End If</li>
+<li>Set Variable [ $j; Value:$j + 1 ]</li>
+<li>Exit Loop If [ $leftDone = 1 or $j &gt; 50 ]</li>
+<li>End Loop</li>
+<li>Set Variable [ $j; Value:1 ]</li>
+<li></li>
+<li>#rightWall</li>
+<li>Loop</li>
+<li>If [ Middle ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) + $rightWall ); 1 ) = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) + $rightWall ); 1; "#" ) ]</li>
+<li>Set Variable [ $rightDone; Value:1 ]</li>
+<li>Else</li>
+<li>Set Variable [ $rightWall; Value:$rightWall - 1 ]</li>
+<li>End If</li>
+<li>Set Variable [ $j; Value:$j + 1 ]</li>
+<li>Exit Loop If [ $rightDone = 1 or $j &gt; 50 ]</li>
+<li>End Loop</li>
+<li>Set Variable [ $i; Value:$i + 1 ]</li>
+<li>Set Variable [ $leftDone; Value:"" ]</li>
+<li>Set Variable [ $rightDone; Value:"" ]</li>
+<li>Exit Loop If [ $i &gt; $length ]</li>
+<li>End Loop</li>
+<li></li>
+<li>Set Variable [ $endWall; Value:$rightWall - 1 ]</li>
+<li>Loop</li>
+<li>If [ Middle ( MapTile::tile; ( RightWords ( $$heroPosition ; 1 ) + $endWall); 1 ) = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) + $endWall ); 1; "#" ) ]</li>
+<li>Else</li>
+<li>Set Variable [ $done; Value:1 ]</li>
+<li>End If</li>
+<li>Set Variable [ $endWall; Value:$endWall - 1 ]</li>
+<li>Exit Loop If [ $done = 1 ]</li>
+<li>End Loop</li>
+<li>Else If [ $direction = "down" ]</li>
+<li></li>
+<li>#down</li>
+<li>If [ Get ( ActivePortalRowNumber ) &ge; 30 ]</li>
+<li>Exit Script [  ]</li>
+<li>End If</li>
+<li>Set Variable [ $i; Value:1 ]</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) + 1 ]
+[ No dialog ]</li>
+<li>Loop</li>
+<li>If [ Middle ( MapTile::tile; (RightWords ( $$heroPosition; 1 ) + ($i + 1) ); 1 ) = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) - ( $i + 1 ) ); 1; "#" ) ]</li>
+<li>Set Variable [ $i; Value:$i + 1 ]</li>
+<li>End If</li>
+<li>Exit Loop If [ Middle ( MapTile::tile; (RightWords ( $$heroPosition; 1 ) - ($i + 1) ); 1 ) = "#" or
+$i &ge; ( $width / 2 ) or
+RightWords ( $$heroPosition; 1 ) - $i &le; 1 ]</li>
+<li>End Loop</li>
+<li>Set Variable [ $leftWall; Value:$i ]</li>
+<li>Set Variable [ $i; Value:1 ]</li>
+<li>Loop</li>
+<li>If [ Middle ( MapTile::tile; (RightWords ( $$heroPosition; 1 ) + ($i + 1) ); 1 ) = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) + ( $i + 1 ) ); 1; "#" ) ]</li>
+<li>Set Variable [ $i; Value:$i + 1 ]</li>
+<li>End If</li>
+<li>Exit Loop If [ Middle ( MapTile::tile; (RightWords ( $$heroPosition; 1 ) - ($i + 1) ); 1 ) = "#" or
+$i &ge; ( $width / 2 ) or
+RightWords ( $$heroPosition; 1 ) + $i &ge; 60 ]</li>
+<li>End Loop</li>
+<li>Set Variable [ $rightWall; Value:$i ]</li>
+<li>Set Variable [ $i; Value:1 ]</li>
+<li>Loop</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) + ($i + 1) ]
+[ Select; No dialog ]</li>
+<li>Set Variable [ $j; Value:1 ]</li>
+<li>#leftWall</li>
+<li>Loop</li>
+<li>If [ Middle ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) - $leftWall ); 1 ) = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) - $leftWall ); 1; "#" ) ]</li>
+<li>Set Variable [ $leftDone; Value:1 ]</li>
+<li>Else</li>
+<li>Set Variable [ $leftWall; Value:$leftWall - 1 ]</li>
+<li>End If</li>
+<li>Set Variable [ $j; Value:$j + 1 ]</li>
+<li>Exit Loop If [ $leftDone = 1 or $j &gt; 50 ]</li>
+<li>End Loop</li>
+<li>Set Variable [ $j; Value:1 ]</li>
+<li>#rightWall</li>
+<li>Loop</li>
+<li>If [ Middle ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) + $rightWall ); 1 ) = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) + $rightWall ); 1; "#" ) ]</li>
+<li>Set Variable [ $rightDone; Value:1 ]</li>
+<li>Else</li>
+<li>Set Variable [ $rightWall; Value:$rightWall - 1 ]</li>
+<li>End If</li>
+<li>Set Variable [ $j; Value:$j + 1 ]</li>
+<li>Exit Loop If [ $rightDone = 1 or $j &gt; 50 ]</li>
+<li>End Loop</li>
+<li>Set Variable [ $i; Value:$i + 1 ]</li>
+<li>Set Variable [ $leftDone; Value:"" ]</li>
+<li>Set Variable [ $rightDone; Value:"" ]</li>
+<li>Exit Loop If [ $i &gt; $length ]</li>
+<li>End Loop</li>
+<li></li>
+<li>Set Variable [ $endWall; Value:$rightWall - 1 ]</li>
+<li>Loop</li>
+<li>If [ Middle ( MapTile::tile; ( RightWords ( $$heroPosition ; 1 ) + $endWall); 1 ) = "." ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile; ( RightWords ( $$heroPosition; 1 ) + $endWall ); 1; "#" ) ]</li>
+<li>Else</li>
+<li>Set Variable [ $done; Value:1 ]</li>
+<li>End If</li>
+<li>Set Variable [ $endWall; Value:$endWall - 1 ]</li>
+<li>Exit Loop If [ $done = 1 ]</li>
+<li>End Loop</li>
+<li>Else If [ $direction = "left" ]</li>
+<li></li>
+<li>#left</li>
+<li></li>
+<li>Else If [ $direction = "right" ]</li>
+<li></li>
+<li>#right</li>
+<li></li>
+<li>End If</li>
+<li></li>
+<li>End If</li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Fields used in this script</td><td class="regularcharttext">
+<ul>
+<li><a href="#1378FieldAnchor_"><em>MapTile</em>::tile</a></li>
+<li><a href="#13610FieldAnchor_"><em>Map</em>::log</a></li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Scripts used in this script</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Layouts used in this script</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Tables used in this script</td><td class="regularcharttext">
+<ul>
+<li><a href="#136BaseTableAnchor_">Map</a></li>
+<li><a href="#137BaseTableAnchor_">MapTile</a></li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Table occurrences used by this script</td><td class="regularcharttext">
+<ul>
+<li><a href="#1065096TableAnchor_"><em>Map</em></a></li>
+<li><a href="#1065097TableAnchor_"><em>MapTile</em></a></li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Custom Functions used by this script</td><td class="regularcharttext">
+<ul>
+<li><a href="#1CustomFunctionAnchor_">roll.dX</a></li>
+</ul>
+</td>
+</tr>
+<tr vAlign="top">
+<td class="chartheadersnobg">Custom menu set used by this script</td><td class="regularcharttext">
+<ul></ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table class="script_navbar">
+<tbody>
+<tr class="script_navbar">
+<a name="44ScriptAnchor_"></a><td class="script_navbar"><a href="#78ScriptAnchor_"><span>Previous Script: [dynamicMapping]</span></a></td><td class="script_navbar"><a href="#54ScriptAnchor_"><span>Parent Folder: [Map]</span></a></td><td class="script_navbar"></td>
 </tr>
 </tbody>
 </table>
@@ -6922,9 +7523,6 @@ $obitRoll = 6; "Murdered until dead.";
 <li>#Wait for an input, and if the right one is received move the hero around</li>
 <li>Set Error Capture [ On ]</li>
 <li></li>
-<li>//  Show Custom Dialog [ Title: "Key"; Message: Get ( TriggerKeystroke ); Default Button: &ldquo;OK&rdquo;, Commit: &ldquo;Yes&rdquo;; Button 2: &ldquo;Cancel&rdquo;, Commit: &ldquo;No&rdquo; ]</li>
-<li>//  Exit Script [  ]</li>
-<li></li>
 <li>#Check for an arrow keypress</li>
 <li>If [ Get ( TriggerKeystroke ) = "a" ]</li>
 <li>#left</li>
@@ -6936,6 +7534,7 @@ $obitRoll = 6; "Murdered until dead.";
 
 $actor = "."; 1;
 $actor = "%"; 1;
+$actor = "/"; 1;
 0
 
  ) ]</li>
@@ -6965,6 +7564,7 @@ $actor = "%"; 1;
 
 $actor = "."; 1;
 $actor = "%"; 1;
+$actor = "/"; 1;
 0
 
  ) ]</li>
@@ -6998,6 +7598,7 @@ $actor = "%"; 1;
 
 $actor = "."; 1;
 $actor = "%"; 1;
+$actor = "/"; 1;
 0
 
  ) ]</li>
@@ -7027,6 +7628,7 @@ $actor = "%"; 1;
 
 $actor = "."; 1;
 $actor = "%"; 1;
+$actor = "/"; 1;
 0
 
  ) ]</li>
@@ -7158,14 +7760,13 @@ $actor = "%"; 1;
 <li>Go to Layout [ &ldquo;Hero&rdquo; (Hero) ]</li>
 <li>Perform Find [ Specified Find Requests: Find Records; Criteria: Hero::id: &ldquo;$$heroID&rdquo; ]
 [ Restore ]</li>
-<li>Set Variable [ $level; Value:Hero::level ]</li>
 <li>Set Variable [ $obitRoll; Value:roll.dX ( 1; 6 ) ]</li>
 <li>Delete Record/Request
 [ No dialog ]</li>
 <li>Go to Layout [ &ldquo;Graveyard&rdquo; (Graveyard) ]</li>
 <li>New Record/Request</li>
 <li>Set Field [ Graveyard::hero; $$heroName ]</li>
-<li>Set Field [ Graveyard::level; $level ]</li>
+<li>Set Field [ Graveyard::level; $$heroLevel ]</li>
 <li>Set Field [ Graveyard::obituary; Case ( 
 
 $obitRoll = 1; Get ( AccountName ) &amp; " decided they were boring and started a new adventure.";
@@ -7197,6 +7798,10 @@ $obitRoll = 6; "Dysentery.";
 <li>New Record/Request</li>
 <li>Set Field [ Hero::name; $$heroName ]</li>
 <li>Set Variable [ $$heroID; Value:Hero::id ]</li>
+<li>Set Variable [ $$heroLevel; Value:Hero::level ]</li>
+<li>Set Variable [ $$heroExperience; Value:Hero::experience ]</li>
+<li>Set Variable [ $$heroHP; Value:Hero::hp ]</li>
+<li>Set Variable [ $$heroMP; Value:Hero::mp ]</li>
 <li></li>
 <li>#Return to the map</li>
 <li>Go to Layout [ &ldquo;Map&rdquo; (Map) ]</li>
@@ -7211,12 +7816,15 @@ $obitRoll = 6; "Dysentery.";
 <ul>
 <li><a href="#1378FieldAnchor_"><em>MapTile</em>::tile</a></li>
 <li><a href="#1391FieldAnchor_"><em>Hero</em>::id</a></li>
-<li><a href="#1397FieldAnchor_"><em>Hero</em>::level</a></li>
 <li><a href="#1456FieldAnchor_"><em>Graveyard</em>::hero</a></li>
 <li><a href="#1457FieldAnchor_"><em>Graveyard</em>::level</a></li>
 <li><a href="#1458FieldAnchor_"><em>Graveyard</em>::obituary</a></li>
 <li>&lt;Missing Field&gt;</li>
 <li><a href="#13911FieldAnchor_"><em>Hero</em>::name</a></li>
+<li><a href="#1397FieldAnchor_"><em>Hero</em>::level</a></li>
+<li><a href="#13912FieldAnchor_"><em>Hero</em>::experience</a></li>
+<li><a href="#1396FieldAnchor_"><em>Hero</em>::hp</a></li>
+<li><a href="#13910FieldAnchor_"><em>Hero</em>::mp</a></li>
 <li><a href="#1369FieldAnchor_"><em>Map</em>::beneath</a></li>
 </ul>
 </td>
@@ -7495,12 +8103,136 @@ $actor = "z"; "zombie";
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">Script Steps</td><td class="regularcharttext">
-<ul></ul>
+<ul>
+<li>#c2021 Travis Witt</li>
+<li>#The hero has encountered something nasty</li>
+<li>Set Error Capture [ On ]</li>
+<li>Freeze Window</li>
+<li></li>
+<li>#Variables</li>
+<li>Set Variable [ $json; Value:Get ( ScriptParameter ) ]</li>
+<li>Set Variable [ $actor; Value:JSONGetElement ( $json; "actor" ) ]</li>
+<li>Set Variable [ $direction; Value:JSONGetElement ( $json; "direction" ) ]</li>
+<li>Set Variable [ $monsterLocation; Value:JSONGetElement ( $json; "monsterLocation" ) ]</li>
+<li></li>
+<li>#Look for a rat that matches this location</li>
+<li>Go to Layout [ &ldquo;Locations&rdquo; (Locations) ]</li>
+<li>Enter Find Mode [  ]</li>
+<li>Insert Calculated Result [ Locations::actor; "r" ]
+[ Select ]</li>
+<li>Insert Calculated Result [ Locations::status; "alive" ]
+[ Select ]</li>
+<li>Insert Calculated Result [ Locations::location; $monsterLocation ]
+[ Select ]</li>
+<li>Perform Find [  ]</li>
+<li></li>
+<li>If [ Get ( LastError ) = 401 ]</li>
+<li>#If no record exists, set the monster's HP, MP, etc and record location</li>
+<li>Set Variable [ $hpRoll; Value:roll.dX ( 1 ; 4 ) ]</li>
+<li>Set Variable [ $mpRoll; Value:"0" ]</li>
+<li>Set Variable [ $gpRoll; Value:If ( roll.dX ( 1; 6 ) &gt; 5; roll.dX ( 1; 3 ); "0" ) ]</li>
+<li>Set Variable [ $item; Value:If ( roll.dX ( 1; 100 ) &lt; 2; "gem"; "" ) ]</li>
+<li>End If</li>
+<li>Set Variable [ $mHP; Value:Locations::hp ]</li>
+<li>Set Variable [ $mMP; Value:Locations::mp ]</li>
+<li>Set Variable [ $mGP; Value:Locations::gp ]</li>
+<li>Set Variable [ $mItem; Value:Locations::item ]</li>
+<li></li>
+<li>#Attack</li>
+<li>Go to Layout [ &ldquo;Map&rdquo; (Map) ]</li>
+<li>Set Variable [ $equipped; Value:ExecuteSQL ( "
+
+SELECT item, category
+FROM Equipment
+WHERE fk_hero = ?";
+""; "";
+$$heroID
+
+ ) ]</li>
+<li>Set Variable [ $bonus; Value:If ( PatternCount ( $equipped; "weapon" ); 
+
+Case ( 
+
+/* melee */
+PatternCount ( $equipped; "dagger" ); roll.dX ( 1; 2 );
+PatternCount ( $equipped; "longsword" ); roll.dX ( 1; 6 );
+PatternCount ( $equipped; "sword" ); roll.dX ( 1; 4 );
+
+/* ranged */
+PatternCount ( $equipped; "sling" ); roll.dX ( 1; 2 );
+PatternCount ( $equipped; "crossbow" ); roll.dX ( 1; 6 );
+PatternCount ( $equipped; "bow" ); roll.dX ( 1; 4 );
+
+ )
+
+
+; "0" ) ]</li>
+<li>Set Variable [ $attackRoll; Value:roll.combatLV ( "1d6" ; $level ; $bonus ; 0 ; "" ) ]</li>
+<li>If [ roll.dX ( 1; 6 ) &gt; 1 ]</li>
+<li>Set Field [ Map::log; "*WHACK* You hit the rat dealing " &amp; $attackRoll &amp; " damage!"
+ &amp; &para; &amp;  Map::log ]</li>
+<li>Set Variable [ $mHP; Value:$mHP - $attackRoll ]</li>
+<li>If [ $mhp &le; 0 ]</li>
+<li>Set Field [ Map::log; "The rat is dead!"
+ &amp; &para; &amp;  Map::log ]</li>
+<li>Set Variable [ $expRoll; Value:"1" ]</li>
+<li>Set Field [ Map::log; "You gain " &amp; $expRoll &amp; " experience."
+ &amp; &para; &amp;  Map::log ]</li>
+<li>Set Variable [ $$heroExperience; Value:$$heroExperience + $expRoll ]</li>
+<li>If [ Let ( [
+
+~newLevel = $$heroLevel + 1;
+~sql =ExecuteSQL ( "
+
+SELECT experience
+FROM Levels
+WHERE level = ?";
+""; "";
+($$heroLevel + 1)
+
+ )
+
+];
+
+~sql &le; ~newLevel
+
+ ) ]</li>
+<li>Set Variable [ $$heroLevel; Value:$$heroLevel + 1 ]</li>
+<li>Set Field [ Map::log; $$heroName &amp; " levels up to level " &amp; $$heroLevel &amp; "!"
+ &amp; &para; &amp;  Map::log ]</li>
+<li>End If</li>
+<li></li>
+<li>#Monster is slain</li>
+<li>Go to Layout [ &ldquo;Locations&rdquo; (Locations) ]</li>
+<li>Perform Find [ Specified Find Requests: Find Records; Criteria: Locations::actor: &ldquo;$actor&rdquo; AND Locations::location: &ldquo;$monsterLocation&rdquo; ]
+[ Restore ]</li>
+<li>Delete Record/Request
+[ No dialog ]</li>
+<li>Go to Layout [ &ldquo;Map&rdquo; (Map) ]</li>
+<li></li>
+<li>Go to Portal Row [ GetAsNumber ( LeftWords ( $monsterLocation; 1 ) ) ]
+[ Select; No dialog ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile ; RightWords ( $monsterLocation; 1 ) ; 1 ; TextColor ( "%" ; RGB ( 255 ; 10 ; 10 ) ) ) ]</li>
+<li></li>
+<li>Refresh Window</li>
+<li>End If</li>
+<li>End If</li>
+</ul>
 </td>
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">Fields used in this script</td><td class="regularcharttext">
-<ul></ul>
+<ul>
+<li><a href="#1386FieldAnchor_"><em>Locations</em>::actor</a></li>
+<li><a href="#1387FieldAnchor_"><em>Locations</em>::status</a></li>
+<li><a href="#13810FieldAnchor_"><em>Locations</em>::location</a></li>
+<li><a href="#1388FieldAnchor_"><em>Locations</em>::hp</a></li>
+<li><a href="#1389FieldAnchor_"><em>Locations</em>::mp</a></li>
+<li><a href="#13813FieldAnchor_"><em>Locations</em>::gp</a></li>
+<li><a href="#13814FieldAnchor_"><em>Locations</em>::item</a></li>
+<li><a href="#13610FieldAnchor_"><em>Map</em>::log</a></li>
+<li><a href="#1378FieldAnchor_"><em>MapTile</em>::tile</a></li>
+</ul>
 </td>
 </tr>
 <tr vAlign="top">
@@ -7510,22 +8242,36 @@ $actor = "z"; "zombie";
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">Layouts used in this script</td><td class="regularcharttext">
-<ul></ul>
+<ul>
+<li><a href="#28LayoutAnchor_">Locations</a></li>
+<li><a href="#16LayoutAnchor_">Map</a></li>
+</ul>
 </td>
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">Tables used in this script</td><td class="regularcharttext">
-<ul></ul>
+<ul>
+<li><a href="#138BaseTableAnchor_">Locations</a></li>
+<li><a href="#136BaseTableAnchor_">Map</a></li>
+<li><a href="#137BaseTableAnchor_">MapTile</a></li>
+</ul>
 </td>
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">Table occurrences used by this script</td><td class="regularcharttext">
-<ul></ul>
+<ul>
+<li><a href="#1065098TableAnchor_"><em>Locations</em></a></li>
+<li><a href="#1065096TableAnchor_"><em>Map</em></a></li>
+<li><a href="#1065097TableAnchor_"><em>MapTile</em></a></li>
+</ul>
 </td>
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">Custom Functions used by this script</td><td class="regularcharttext">
-<ul></ul>
+<ul>
+<li><a href="#1CustomFunctionAnchor_">roll.dX</a></li>
+<li><a href="#9CustomFunctionAnchor_">roll.combatLV</a></li>
+</ul>
 </td>
 </tr>
 <tr vAlign="top">
@@ -7951,6 +8697,7 @@ $actor = "z"; "zombie";
 <li></li>
 <li>#Variables</li>
 <li>Set Variable [ $json; Value:Get ( ScriptParameter ) ]</li>
+<li>Set Variable [ $direction; Value:JSONGetElement ( $json; "direction" ) ]</li>
 <li>Set Variable [ $doorLocation; Value:JSONGetElement ( $json; "doorLocation" ) ]</li>
 <li>Set Variable [ $bash; Value:roll.dX ( 1; 6 ) ]</li>
 <li></li>
@@ -7984,6 +8731,7 @@ $actor = "z"; "zombie";
 <li>Go to Layout [ &ldquo;Map&rdquo; (Map) ]</li>
 <li>Set Field [ Map::log; "*SMASH* You break the door down!"
  &amp; &para; &amp;  Map::log ]</li>
+<li>Perform Script [ &ldquo;dynamicMapping&rdquo;; Parameter: $direction ]</li>
 <li>Exit Script [  ]</li>
 <li>Else</li>
 <li>Set Field [ Map::log; "*THUD* The door does not move."
@@ -8006,7 +8754,9 @@ $actor = "z"; "zombie";
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">Scripts used in this script</td><td class="regularcharttext">
-<ul></ul>
+<ul>
+<li><a href="#78ScriptAnchor_">dynamicMapping</a></li>
+</ul>
 </td>
 </tr>
 <tr vAlign="top">
@@ -8097,6 +8847,26 @@ $actor = "z"; "zombie";
 <li>Set Variable [ $doorLocation; Value:JSONGetElement ( $json; "doorLocation" ) ]</li>
 <li>Set Variable [ $direction; Value:JSONGetElement ( $json; "direction" ) ]</li>
 <li></li>
+<li>#Determine if we're in a room or a hall</li>
+<li>If [ $direction = "up" or $direction = "down" ]</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) ]
+[ Select; No dialog ]</li>
+<li>Set Variable [ $$locationType; Value:If ( 
+
+Middle ( MapTile::tile; ( RightWords ( $$heroPosition ; 1 ) - 1 ); 1 ) = "#" and
+Middle ( MapTile::tile; ( RightWords ( $$heroPosition ; 1 ) + 1 ); 1 ) = "#"; 
+
+"hall"; "room" ) ]</li>
+<li>Else</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) - 1 ]
+[ Select; No dialog ]</li>
+<li>Set Variable [ $roomCheck; Value:If ( Middle ( MapTile::tile; RightWords ( $$heroPosition; 1 ); 1 ) = "#"; 1; 0 ) ]</li>
+<li>Go to Portal Row [ LeftWords ( $$heroPosition; 1 ) + 1 ]
+[ Select; No dialog ]</li>
+<li>Set Variable [ $roomCheck; Value:If ( Middle ( MapTile::tile; RightWords ( $$heroPosition; 1 ); 1 ) = "#"; $roomCheck + 1; 0 ) ]</li>
+<li>Set Variable [ $$locationType; Value:If ( $roomCheck = 2; "hall"; "room" ) ]</li>
+<li>End If</li>
+<li></li>
 <li>#Look for a previously locked door that matches this location</li>
 <li>Go to Layout [ &ldquo;Locations&rdquo; (Locations) ]</li>
 <li>Enter Find Mode [  ]</li>
@@ -8152,7 +8922,12 @@ $lockRoll = 2; 1;
 <li>Perform Script [ &ldquo;door.openClose&rdquo;; Parameter: $json &amp; &para; &amp; "key" ]</li>
 <li>End If</li>
 <li>Else</li>
-<li></li>
+<li>Go to Portal Row [ LeftWords ( $doorLocation; 1 ) ]
+[ Select; No dialog ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile ; RightWords ( $doorLocation; 1 ) ; 1 ; TextColor ( "/" ; RGB ( 139 ; 69 ; 19 ) ) ) ]</li>
+<li>Set Field [ Map::log; "The door opens."
+ &amp; &para; &amp;  Map::log ]</li>
+<li>Perform Script [ &ldquo;dynamicMapping&rdquo;; Parameter: $direction ]</li>
 <li>End If</li>
 <li></li>
 </ul>
@@ -8161,9 +8936,11 @@ $lockRoll = 2; 1;
 <tr vAlign="top">
 <td class="chartheadersnobg">Fields used in this script</td><td class="regularcharttext">
 <ul>
+<li><a href="#1378FieldAnchor_"><em>MapTile</em>::tile</a></li>
 <li><a href="#1386FieldAnchor_"><em>Locations</em>::actor</a></li>
 <li><a href="#1387FieldAnchor_"><em>Locations</em>::status</a></li>
 <li><a href="#13810FieldAnchor_"><em>Locations</em>::location</a></li>
+<li><a href="#13610FieldAnchor_"><em>Map</em>::log</a></li>
 </ul>
 </td>
 </tr>
@@ -8172,6 +8949,7 @@ $lockRoll = 2; 1;
 <ul>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
 <li><a href="#65ScriptAnchor_">door.openClose</a></li>
+<li><a href="#78ScriptAnchor_">dynamicMapping</a></li>
 </ul>
 </td>
 </tr>
@@ -8187,6 +8965,8 @@ $lockRoll = 2; 1;
 <td class="chartheadersnobg">Tables used in this script</td><td class="regularcharttext">
 <ul>
 <li><a href="#138BaseTableAnchor_">Locations</a></li>
+<li><a href="#136BaseTableAnchor_">Map</a></li>
+<li><a href="#137BaseTableAnchor_">MapTile</a></li>
 </ul>
 </td>
 </tr>
@@ -8194,6 +8974,8 @@ $lockRoll = 2; 1;
 <td class="chartheadersnobg">Table occurrences used by this script</td><td class="regularcharttext">
 <ul>
 <li><a href="#1065098TableAnchor_"><em>Locations</em></a></li>
+<li><a href="#1065096TableAnchor_"><em>Map</em></a></li>
+<li><a href="#1065097TableAnchor_"><em>MapTile</em></a></li>
 </ul>
 </td>
 </tr>
@@ -8254,6 +9036,7 @@ $lockRoll = 2; 1;
 <li></li>
 <li>#Variables</li>
 <li>Set Variable [ $json; Value:GetValue ( Get ( ScriptParameter ); 1 ) ]</li>
+<li>Set Variable [ $doorLocation; Value:JSONGetElement ( $json; "doorLocation" ) ]</li>
 <li>Set Variable [ $key; Value:GetValue ( Get ( ScriptParameter ); 2 ) ]</li>
 <li></li>
 <li>If [ $key ]</li>
@@ -8270,6 +9053,8 @@ $hero
 <li>#Open Door and remove a key from inventory</li>
 <li>Set Field [ Map::log; "*CLICK* You unlock the door with a key!"
  &amp; &para; &amp;  Map::log ]</li>
+<li>Set Field [ MapTile::tile; Replace ( MapTile::tile ; RightWords ( $doorLocation; 1 ) ; 1 ; TextColor ( "/" ; RGB ( 139 ; 69 ; 19 ) ) ) ]</li>
+<li>Perform Script [ &ldquo;dynamicMapping&rdquo;; Parameter: $direction ]</li>
 <li>Exit Script [  ]</li>
 <li>Else</li>
 <li>Set Field [ Map::log; "You don't have any keys..."
@@ -8284,12 +9069,15 @@ $hero
 <td class="chartheadersnobg">Fields used in this script</td><td class="regularcharttext">
 <ul>
 <li><a href="#13610FieldAnchor_"><em>Map</em>::log</a></li>
+<li><a href="#1378FieldAnchor_"><em>MapTile</em>::tile</a></li>
 </ul>
 </td>
 </tr>
 <tr vAlign="top">
 <td class="chartheadersnobg">Scripts used in this script</td><td class="regularcharttext">
-<ul></ul>
+<ul>
+<li><a href="#78ScriptAnchor_">dynamicMapping</a></li>
+</ul>
 </td>
 </tr>
 <tr vAlign="top">
@@ -8301,6 +9089,7 @@ $hero
 <td class="chartheadersnobg">Tables used in this script</td><td class="regularcharttext">
 <ul>
 <li><a href="#136BaseTableAnchor_">Map</a></li>
+<li><a href="#137BaseTableAnchor_">MapTile</a></li>
 </ul>
 </td>
 </tr>
@@ -8308,6 +9097,7 @@ $hero
 <td class="chartheadersnobg">Table occurrences used by this script</td><td class="regularcharttext">
 <ul>
 <li><a href="#1065096TableAnchor_"><em>Map</em></a></li>
+<li><a href="#1065097TableAnchor_"><em>MapTile</em></a></li>
 </ul>
 </td>
 </tr>
@@ -8336,10 +9126,10 @@ $hero
 <td><a name="1AccountAnchor_"/>[Guest]</td><td>*********</td><td>Inactive</td><td>FileMaker File</td><td><a href="#3PrivilegeSetAnchor_">[Read-Only Access]</a></td><td></td><td>Off</td>
 </tr>
 <tr class="regularcharttext">
-<td><a name="3AccountAnchor_"/>Travis</td><td>*********</td><td>Active</td><td>FileMaker File</td><td><a href="#1PrivilegeSetAnchor_">[Full Access]</a></td><td>Developer</td><td>Off</td>
+<td><a name="3AccountAnchor_"/>Admin</td><td>*********</td><td>Active</td><td>FileMaker File</td><td><a href="#1PrivilegeSetAnchor_">[Full Access]</a></td><td>Developer</td><td>Off</td>
 </tr>
 <tr class="regularcharttext">
-<td><a name="4AccountAnchor_"/>RogueFan</td><td></td><td>Active</td><td>FileMaker File</td><td><a href="#4PrivilegeSetAnchor_">Player</a></td><td>Default User</td><td>Off</td>
+<td><a name="4AccountAnchor_"/>User</td><td></td><td>Active</td><td>FileMaker File</td><td><a href="#4PrivilegeSetAnchor_">Player</a></td><td>Default User</td><td>Off</td>
 </tr>
 </tbody>
 </table>
@@ -8355,7 +9145,7 @@ $hero
 <td class="chartheadersnobg" width="11%">Description</td><td class="regularcharttext" width="89%">access to everything</td>
 </tr>
 <tr vAlign="top">
-<td class="chartheadersnobg">Used by</td><td class="regularcharttext"><a href="#3AccountAnchor_">Travis</a></td>
+<td class="chartheadersnobg">Used by</td><td class="regularcharttext"><a href="#3AccountAnchor_">Admin</a></td>
 </tr>
 </tbody>
 </table>
@@ -8568,7 +9358,7 @@ $hero
 <td class="chartheadersnobg" width="11%">Description</td><td class="regularcharttext" width="89%"></td>
 </tr>
 <tr vAlign="top">
-<td class="chartheadersnobg">Used by</td><td class="regularcharttext"><a href="#4AccountAnchor_">RogueFan</a></td>
+<td class="chartheadersnobg">Used by</td><td class="regularcharttext"><a href="#4AccountAnchor_">User</a></td>
 </tr>
 </tbody>
 </table>
@@ -8667,13 +9457,13 @@ $hero
 <td><a name="7ExtendedPrivilegeAnchor_"/>fmextscriptaccess</td><td>Allow Apple events and ActiveX to perform FileMaker operations</td><td></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
-<td><a name="8ExtendedPrivilegeAnchor_"/>fmurlscript</td><td>Allow URLs to run FileMaker scripts</td><td></td>
+<td><a name="8ExtendedPrivilegeAnchor_"/>fmurlscript</td><td>Allow URLs to perform FileMaker scripts</td><td></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
 <td><a name="9ExtendedPrivilegeAnchor_"/>fmrest</td><td>Access via FileMaker Data API</td><td></td>
 </tr>
 <tr class="regularcharttext" vAlign="top">
-<td><a name="10ExtendedPrivilegeAnchor_"/>fmodata</td><td>Access via OData</td><td></td>
+<td><a name="10ExtendedPrivilegeAnchor_"/>fmodata</td><td></td><td></td>
 </tr>
 </tbody>
 </table>
@@ -8726,8 +9516,10 @@ $hero
 </td><td>
 <ul>
 <li><a href="#42ScriptAnchor_">newMap</a></li>
+<li><a href="#78ScriptAnchor_">dynamicMapping</a></li>
 <li><a href="#43ScriptAnchor_">spawnHero</a></li>
 <li><a href="#50ScriptAnchor_">performAction</a></li>
+<li><a href="#72ScriptAnchor_">rat</a></li>
 <li><a href="#66ScriptAnchor_">door.bash</a></li>
 <li><a href="#64ScriptAnchor_">door.isLocked</a></li>
 </ul>
@@ -9344,8 +10136,6 @@ $hero
 </strong><strong>// 11/10/2020 [Travis]: Created
 </strong><strong>// ===
 </strong>
-<strong>//WIP DOES NOT WORK YET
-</strong>
 <strong>Let</strong> ([
     rollCount = <strong>GetAsNumber</strong> (<strong>LeftWords</strong> ( <strong>Substitute</strong>( XdX; "d"; " " ) ; 1 )) ;
     dXX = <strong>GetAsNumber</strong> (<strong>RightWords</strong> ( <strong>Substitute</strong>( XdX; "d"; " " ) ; 1 ));
@@ -9357,7 +10147,11 @@ $hero
     damageTotal + extraDmg
 )</td><td>
 <ul></ul>
-</td><td></td>
+</td><td>
+<ul>
+<li><a href="#72ScriptAnchor_">rat</a></li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
